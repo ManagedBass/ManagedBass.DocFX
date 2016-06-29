@@ -4,13 +4,10 @@
       "src": [
         {
           "cwd": "../",
-          "files": [
-            "ManagedBass.PInvoke/src/Windows/Windows.csproj"
-          ],
+          "files": ["ManagedBass.PInvoke/src/Windows/Windows.csproj"],
           "exclude": [
             "**/obj/**",
-            "**/bin/**",
-            "_site/**"
+            "**/bin/**"
           ]
         }
       ],
@@ -32,38 +29,21 @@
           "toc.yml",
           "*.md"
         ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
+        "exclude": ["_site/**", "README.md"]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
+        "files": ["images/**"]
       }
     ],
     "overwrite": [
       {
-        "files": [
-          "apidoc/**.md"
-        ],
-        "exclude": [
-          "obj/**",
-          "_site/**"
-        ]
+        "files": ["apidoc/**.md"]
       }
     ],
     "dest": "_site",
-    "template": [
-      "default"
-    ],
+    "template": ["template"],
     "noLangKeyword": false
   }
 }

@@ -1,3 +1,4 @@
+# What is a Channel?
 A "channel" can be a sample playback channel (HCHANNEL), a sample stream (HSTREAM), a MOD music (HMUSIC), or a recording (HRECORD). Each "Channel" function can be used with one or more of these channel types.
 
 ## The types of channel

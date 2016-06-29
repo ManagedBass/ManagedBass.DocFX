@@ -1,3 +1,4 @@
+# Api Documentation
+Welcome to the API documentation for ManagedBass.PInvoke (Windows).
 
-# PLACEHOLDER
-TODO: Add .NET projects to *src* folder and run `docfx` to generate a **REAL** *API Documentation*!
+Generated from source code using DocFX.

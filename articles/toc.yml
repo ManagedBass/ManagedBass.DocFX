@@ -1,15 +1,32 @@
 
 - name: Introduction
   href: intro.md
-- name: What is a Channel?
-  href: What-is-a-Channel.md
-- name: DX8 Effect Implementations
-  href: DX8-Effect-Implementations.md
-- name: Floating point Channels
-  href: Floating-point-Channels.md
-- name: Matrix Mixing
-  href: Matrix-Mixing.md
-- name: Multi Channel Streams
-  href: Multi-Channel-Streams.md
-- name: Speaker Assignment Flags
-  href: Speaker-Assignment-Flags.md
+- name: AddOns
+  href: AddOns.md
+- name: Distribution
+  href: Distribution.md
+- name: Changelog
+  href: Changelog.md
+- name: License
+  href: License.md
+- name: Conceptual
+  items:
+    - name: What is a Channel?
+      href: Conceptual/What-is-a-Channel.md
+    - name: DX8 Effect Implementations
+      href: Conceptual/DX8-Effect-Implementations.md
+    - name: Floating point Channels
+      href: Conceptual/Floating-point-Channels.md
+    - name: Matrix Mixing
+      href: Conceptual/Matrix-Mixing.md
+    - name: Multi Channel Streams
+      href: Conceptual/Multi-Channel-Streams.md
+    - name: Speaker Assignment Flags
+      href: Conceptual/Speaker-Assignment-Flags.md
+- name: Getting Started
+  href: Getting-Started/Getting-Started.md
+  items:
+    - name: Android
+      href: Getting-Started/Getting-Started-Android.md
+    - name: iOS
+      href: Getting-Started/Getting-Started-iOS.md
