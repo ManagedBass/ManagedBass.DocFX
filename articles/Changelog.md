@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.3.1
+**BassMix**
+* Added ChannelAttribute.MixerLatency.
+* Updated BassMix.ChannelSetMatrix(int, float[,], float) documentation.
+
+**BassEnc v2.4.13**
+* Added EncodeServer.Meta.
+* Added EncodeFlags.Dither, ConvertFloatAuto.
+* Improved BassEnc.CastProxy.
+
+**BassHls**
+* Added SyncFlags.HlsSegment.
+* Added TagType.HlsExtInf.
+* Added FileStreamPosition.HlsSegment.
+
 ## v0.3.0
 Completed XML Documentation!
 

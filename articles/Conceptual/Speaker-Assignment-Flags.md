@@ -3,7 +3,7 @@ Most soundcards these days are capable of more than plain stereo output.
 To take advantage of this, HSTREAM and HMUSIC channels can be assigned to specific speakers.
 For example, channels can be played on the front or rear speakers to effectively have 2 separate stereo outputs from the one device.
 A 3rd stereo output is available on 5.1 cards, and a 4th on 7.1 cards.
-The speakers member of the <xref:ManagedBass.BassInfo> structure can be used to check how many speakers are available.
+The <xref:ManagedBass.BassInfo.SpeakerCount> member of the <xref:ManagedBass.BassInfo> structure can be used to check how many speakers are available.
 
 ## Stereo speaker assignment flags
 BassFlags                                      | Definition
