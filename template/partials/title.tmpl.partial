@@ -1,0 +1,19 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+{{#isNamespace}}
+{{name.0.value}} <small>Namespace</small>
+{{/isNamespace}}
+{{#inClass}}
+{{name.0.value}} <small>Class</small>
+{{/inClass}}
+{{#inStruct}}
+{{name.0.value}} <small>Struct</small>
+{{/inStruct}}
+{{#inInterface}}
+{{name.0.value}} <small>Interface</small>
+{{/inInterface}}
+{{#inEnum}}
+{{name.0.value}} <small>Enum</small>
+{{/inEnum}}
+{{#inDelegate}}
+{{name.0.value}} <small>Delegate</small>
+{{/inDelegate}}

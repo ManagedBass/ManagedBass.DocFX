@@ -14,7 +14,7 @@ for (int a = 0; a < 512; a++)
     Console.WriteLine("{0}: {1}", a, fft[a]);
 ```
 
-Perform a 1024 sample FFT on a channel and list the complex result. 
+Perform a 1024 sample FFT on a channel and list the complex result.
 
 ```csharp
 var fft = new float[2048]; // fft data buffer
