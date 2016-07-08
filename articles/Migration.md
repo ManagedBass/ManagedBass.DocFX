@@ -1,3 +1,5 @@
+# Migrating from Bass.Net
+
 This post is targeted for those migrating from Bass.Net to ManagedBass.
 
 Licensing
@@ -14,7 +16,7 @@ Redundant use of *BASS_XYZ_* in every function name is removed.
 
 e.g. `Bass.BASS_StreamFree` in Bass.Net is named as [Bass.StreamFree](xref:ManagedBass.Bass.StreamFree(System.Int32)).
 
-and BassWasapi.`BASS_WASAPI_Init` in Bass.Net is named as [BassWasapi.Init](xref:ManagedBass.Wasapi.BassWasapi.Init(System.Int32,System.Int32,System.Int32,ManagedBass.Wasapi.WasapiInitFlags,System.Single,System.Single,ManagedBass.Wasapi.WasapiProcedure,System.IntPtr)).
+and `BassWasapi.BASS_WASAPI_Init` in Bass.Net is named as [BassWasapi.Init](xref:ManagedBass.Wasapi.BassWasapi.Init(System.Int32,System.Int32,System.Int32,ManagedBass.Wasapi.WasapiInitFlags,System.Single,System.Single,ManagedBass.Wasapi.WasapiProcedure,System.IntPtr)).
 
 For some particular cases like the example below **Polymorphism** is used to simplify code.
 
@@ -26,7 +28,8 @@ ManagedBass uses structs (with `[StructLayout(LayoutKind.Sequential)]` attribute
 
 Distribution
 ---------------------------------------------------------------------------------
-ManagedBass is distributed on NuGet. Alternatively, since its Open-Source you could build it yourself.
+ManagedBass is distributed on NuGet.
+Alternatively, since its Open-Source you could build it yourself.
 
 The NuGet package contains a Portable Class Library version and employs the [Bait and Switch](http://log.paulbetts.org/the-bait-and-switch-pcl-trick/) trick.
 
@@ -36,17 +39,13 @@ Configurations
 ---------------------------------------------------------------------------------
 Bass.Net uses *Bass.Get/SetConfig* methods while ManagedBass provides static **Properties** on respective classes.
 
-Plugins
----------------------------------------------------------------------------------
-**NEW**: Plugins are now wrapped in specific classes.
-
 Delegates
 ---------------------------------------------------------------------------------
 An instance of a callback delegate passed to a BASS function in Bass.Net needs to be manually referenced to prevent it from being Garbage-Collected.
 
 This also applies in most cases to ManagedBass.
 
-But, for some scenarios like `CreateStream` methods, `Bass.ChannelSetDSP` and `Bass.ChannelSetSync`, the delegates are automatically held alive by ManagedBass for your convenience.
+But, for some scenarios like `CreateStream` methods, [Bass.ChannelSetDSP](xref:ManagedBass.Bass.ChannelSetDSP(System.Int32,ManagedBass.DSPProcedure,System.IntPtr,System.Int32)) and [Bass.ChannelSetSync](xref:ManagedBass.Bass.ChannelSetSync(System.Int32,ManagedBass.SyncFlags,System.Int64,ManagedBass.SyncProcedure,System.IntPtr)), the delegates are automatically held alive by ManagedBass for your convenience.
 
 Effects
 ---------------------------------------------------------------------------------
@@ -56,6 +55,4 @@ Alternatively, if you want to do that manually the effect functions are availabl
 
 Managed Types
 ---------------------------------------------------------------------------------
-.Net classes are provided for Channel and derivatives, MediaPlayer, Loopback, Recording, Devices and more...
-
----------------------------------------------------------------------------------
+.Net classes are provided for MediaPlayer, Loopback, Recording, Devices and more...

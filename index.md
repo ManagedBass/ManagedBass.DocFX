@@ -1,4 +1,4 @@
-![ManagedBass Logo](https://raw.githubusercontent.com/ManagedBass/ManagedBass/master/ManagedBass.png)
+![Logo](https://raw.githubusercontent.com/ManagedBass/ManagedBass/master/ManagedBass.png)
 # ManagedBass
 **ManagedBass** is Free Open-Source .Net Wrapper for un4seen [BASS](http://un4seen.com/bass.html) including Managed Types.
 **ManagedBass** depends on **ManagedBass.PInvoke**.
@@ -16,9 +16,3 @@ ManagedBass is free and open-souce.
 Also, it tries to make the API friendly to a .NET developer.
 
 Lots of sample repositories are available on the [GitHub Organization](https://github.com/ManagedBass) to get you started.
-
----
-Copyright 2016 [Mathew Sachin](https://github.com/MathewSachin) | 
-[License](articles/License.md) | 
-[Chat](https://gitter.im/ManagedBass/ManagedBass) | 
-[Blog](https://managedbass.wordpress.com/)

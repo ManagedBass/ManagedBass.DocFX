@@ -9,9 +9,21 @@
 
 2. Download bass libraries for iOS from [here](http://www.un4seen.com/forum/?topic=10910.0) and place in project directory.
 
-4. Set `Link Behaviour` = **Link All**
+3. Add libbass.a as **Native Reference**.
 
-5. Set mtouch arguments to:
+4. In the project Options, under **iOS Build**, set:
+  - `Link Behaviour` = **Link All**
+  - `Additional mtouch arguments` to:
 ```
 -gcc_flags "-L$(ProjectDir) -lbass -framework CFNetwork -framework AudioToolbox -framework SystemConfiguration -framework Accelerate -force_load $(ProjectDir)/libbass.a"
 ```
+
+## Notes
+- [Here](https://github.com/ManagedBass/Xamarin.iOS.Player) is a very simple example of an iOS audio player app using ManagedBass.
+  Thanks to Brian Pieslak.
+
+- The mtouch arguments may need to be set for every configuration.
+
+- You may need to add **CoreMIDI** framework when using BassMidi.
+
+- The Additional mtouch arguments should also include `-lstdc++` when using BassFx or BassApi.

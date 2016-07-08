@@ -1,9 +1,8 @@
-# How?
+# Wrapping BASS
 > This documentation is an Early preview.
 
 Let's get into some details of ManagedBass' approach in wrapping up Un4seen Bass and its AddOns.
-
-A wrapper is needed for using BASS and AddOns with .Net because of them being written in unmanaged code (C/C++/Delphi).
+A wrapper (like ManagedBass) is needed for using BASS and AddOns with .Net because of them being written in unmanaged code (C/C++/Delphi).
 
 ---
 ## Garbage Collector (GC)
@@ -11,7 +10,7 @@ GC is an important feature of a managed environment including .Net which manages
 It keeps track of references to objects and frees the allocated memory when the object is no longer referenced by any part of the program.
 This ensures that there are no memory leaks and references are always valid.
 It may also move objects to new location in memory to reduce fragmentation.
-This feature is great for a programmer who has to work only with managed code, but when interoperating with unmanaged code this poses some problems.
+This feature is great for a programmer who has to work only with managed code, but when interoperating with unmanaged code this poses some problems which are discussed in follwing sections.
 
 ---
 
@@ -28,6 +27,7 @@ All BASS functions are provided as static methods and Configurations are provide
 `System.Runtime.InteropServices.DllImport` is applied on a method to be mapped with Bass.
 
 The `EntryPoint` property allows simplifying the Method Names.
+Redundant use of *BASS_XYZ_* in every function name is removed.
 
 e.g. PInvoking `BASS_StreamFree` defined in bass.dll
 ```csharp
@@ -50,6 +50,7 @@ ManagedBass uses Unicode for most strings wherever applicable to be consistent w
 
 This is done by setting `CharSet` to `CharSet.Unicode` and passing `BassFlags.Unicode` flag in the Flags parameter.
 
+### Strings as Method Parameters
 e.g. PInvoking `BASS_StreamCreateFile` defined in bass.dll
 ```csharp
 [DllImport(DllName, CharSet = CharSet.Unicode)]
@@ -60,6 +61,9 @@ public static int CreateStream(string File, long Offset, long Length, BassFlags 
     return BASS_StreamCreateFile(false, File, Offset, Length, Flags | BassFlags.Unicode);
 }
 ```
+
+### Strings as Method Return values or struct members
+Declared as an `IntPtr` and one of `Marshal.PtrToStringAnsi`, `Marshal.PtrToStringUni` or `Extensions.PtrToStringUtf8` is used as appropriate to convert that to string. 
 
 ---
 ## Wrapping Plugins

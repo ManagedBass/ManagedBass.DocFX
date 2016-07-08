@@ -2,7 +2,7 @@
 uid: ManagedBass.Bass
 ---
 
-### Hello World
+**Hello World**  
 A simple Windows console application for playing an Mp3.
 
 ```csharp
