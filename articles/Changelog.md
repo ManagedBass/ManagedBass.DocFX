@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.2
+* Fixed typo: `AsioFuture.GetOutputMeter`.
+* Correction: Airplay features moved to Mac version from iOS
+* Added const `BassCd.TrackPregap`.
+* Added `BassEnc.MimeMp3, MimeAac, MimeOgg` to be used with `BassEnc.CastInit`.
+
 ## v0.3.1
 **BassMix**
 * Added ChannelAttribute.MixerLatency.
