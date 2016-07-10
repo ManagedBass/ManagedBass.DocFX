@@ -15,7 +15,7 @@ A Plugin plugs into standard BASS functions like sample or stream creation to pr
 
 BASS has built in support for various audio codecs like MPEG, OGG, WAV, AIFF, etc.
 
-A Plugin is loaded using <xref:ManagedBass.Bass.PluginLoad(System.String)> method and unloaded using <xref:ManagedBass.Bass.PluginFree(System.Int32)>.
+A Plugin is loaded using @ManagedBass.Bass.PluginLoad(System.String) method and unloaded using @ManagedBass.Bass.PluginFree(System.Int32).
 
 The following AddOns support the BASS Plugin system.
 - BassAac

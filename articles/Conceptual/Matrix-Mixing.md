@@ -7,7 +7,7 @@ Equally, if the source has fewer channels than the output, you may want to "upmi
 Or you may just want to rearrange the channels.
 Matrix mixing allows all of these.
 
-A matrix mixer is created on a per-source basis (you can mix'n'match normal and matrix mixing), by using the <xref:ManagedBass.BassFlags.MixerMatrix> and/or <xref:ManagedBass.BassFlags.MixerDownMix> flag when calling <xref:ManagedBass.Mix.BassMix.MixerAddChannel(System.Int32,System.Int32,ManagedBass.BassFlags)>.
+A matrix mixer is created on a per-source basis (you can mix'n'match normal and matrix mixing), by using the @ManagedBass.BassFlags.MixerMatrix and/or @ManagedBass.BassFlags.MixerDownMix flag when calling @ManagedBass.Mix.BassMix.MixerAddChannel(System.Int32,System.Int32,ManagedBass.BassFlags).
 The matrix itself is a 2-dimensional array of floating-point mixing levels, with the source channels on one axis, and the output channels on the other.
 Some simple examples are shown below.
 

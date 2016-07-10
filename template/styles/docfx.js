@@ -503,7 +503,6 @@ $(function () {
       // supported headers are h1, h2, h3, and h4
       // The topest header is ignored
       var selector = ".article article";
-      var affixSelector = "#affix";
       var headers = ['h4', 'h3', 'h2', 'h1'];
       var hierarchy = [];
       var toppestIndex = -1;

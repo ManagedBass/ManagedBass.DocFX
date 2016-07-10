@@ -1,5 +1,5 @@
 ---
-uid: ManagedBass.Bass.ChannelGetLength(System.Int32)
+uid: ManagedBass.Bass.ChannelGetLength(System.Int32,ManagedBass.PositionFlags)
 ---
 
 **Example**  
