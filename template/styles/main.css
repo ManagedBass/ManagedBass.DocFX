@@ -1,0 +1,11 @@
+.expander:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e260";
+    float: right;
+    color: grey;
+    font-size: small;
+}
+
+.expander.collapsed:after {
+    content: "\e259";
+}

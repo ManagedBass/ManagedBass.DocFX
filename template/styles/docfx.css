@@ -257,10 +257,6 @@ article section {
 #autocollapse .navbar-brand {
   margin-left: 0;
 }
-.collapse.in,
-.collapsing {
-  text-align: center;
-}
 .collapsing .navbar-form {
   margin: 0 auto;
   max-width: 400px;
