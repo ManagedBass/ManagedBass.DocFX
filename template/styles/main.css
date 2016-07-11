@@ -9,3 +9,19 @@
 .expander.collapsed:after {
     content: "\e259";
 }
+
+a.back-to-top {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    z-index: 9999;
+    position: fixed;
+    text-align: center;
+    padding: 10px 0 0 0;
+    right: 20px;
+    bottom: 20px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
