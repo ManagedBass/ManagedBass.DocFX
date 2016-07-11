@@ -1,3 +1,7 @@
+---
+uid: FloatChannels
+---
+
 # Floating-point Channels
 Channels can be made to use 32-bit floating-point sample data.
 When a channel uses floating-point sample data, BASS takes full advantage of the extra resolution when generating the decoded sample data; it does not simply convert 16-bit data to floating-point.

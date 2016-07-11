@@ -1,3 +1,7 @@
+---
+uid: SpeakerFlags
+---
+
 # Speaker Assignment Flags
 Most soundcards these days are capable of more than plain stereo output.
 To take advantage of this, HSTREAM and HMUSIC channels can be assigned to specific speakers.
