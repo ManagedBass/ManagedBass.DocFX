@@ -504,7 +504,7 @@ body .toc{
 }
 .toc-toggle {
   display: none;
-  margin: 0 15px 0px 15px;
+  padding: 0 0 2px 0;
 }
 .sidefilter {
   position: fixed;
@@ -700,7 +700,6 @@ footer {
     text-align: center;
   }
   .sidenav {
-    padding: 15px 0;
     margin-left: -15px;
     margin-right: -15px;
   }
