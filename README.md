@@ -1,7 +1,21 @@
 # ManagedBass.DocFX
-This repository holds the data required to generate API documentation using [DocFX](http://dotnet.github.io/docfx).
+This repository holds the data required to generate the ManagedBass documentation website using [DocFX](http://dotnet.github.io/docfx).
 
-An AppVeyor script is used to update the website: https://ManagedBass.GitHub.io on every push to this repository.
+An AppVeyor script is used to update the website: [ManagedBass.GitHub.io](https://ManagedBass.GitHub.io) on every push to this repository.
 
 ## Building Locally
 Make sure that this repository folder and [ManagedBass.PInvoke](https://github/ManagedBass/ManagedBass.PInvoke) repository folder are under a common folder.
+
+## Differences from Default Template
+- Uses Floating Back to Top smooth scroll button which hides while scrolling.
+- Breadcrumb is hidden on mobiles.
+- Conceptual documentation comes below remarks.
+- Markdown tables are identical to the other tables.
+- Customized Footer.
+- Uses White navbar with Home button.
+- Customized titles.
+- View Source is available for class members on mobiles.
+- Thinner Show/Hide Table of Contents button on mobiles.
+- Normal alignment in collapsable sections.
+- Class members in collapsable sections with expander icon.
+- Better tabular views in api documentation.

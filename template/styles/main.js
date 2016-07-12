@@ -6,7 +6,7 @@ $(document).ready(function ()
     var amountScrolled = 300;
 
     $(window).scroll(function () {
-        $('a.back-to-top').fadeOut('slow');
+        $('a.back-to-top').fadeOut('fast');
 
         if (scrollTimeout)
             clearTimeout(scrollTimeout);
