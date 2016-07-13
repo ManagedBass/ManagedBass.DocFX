@@ -2,7 +2,7 @@
 > This documentation is an Early preview.
 
 Let's get into some details of ManagedBass' approach in wrapping up Un4seen Bass and its AddOns.
-A wrapper (like ManagedBass) is needed for using BASS and AddOns with .Net because of them being written in unmanaged code (C/C++/Delphi).
+A wrapper (like ManagedBass) is needed for using BASS and AddOns with .Net because they are written in unmanaged code (C/C++/Delphi).
 
 ---
 ## Garbage Collector (GC)
@@ -14,8 +14,6 @@ This feature is great for a programmer who has to work only with managed code, b
 
 ---
 
-Platform Invoke Services (PInvoke) is used to call the functions in unmanaged BASS library.
-
 ## Library
 A single Bass library is wrapped by a `static` class.
 All BASS functions are provided as static methods and Configurations are provided as static properties. 
@@ -24,6 +22,8 @@ All BASS functions are provided as static methods and Configurations are provide
 
 ---
 ## Function
+Platform Invoke Services (PInvoke) is used to call the functions in unmanaged BASS library.
+
 `System.Runtime.InteropServices.DllImport` is applied on a method to be mapped with Bass.
 
 The `EntryPoint` property allows simplifying the Method Names.
@@ -45,12 +45,11 @@ These are automatically resolved by the runtime as:
 `DllName = "__Internal"` is used for iOS
 
 ---
-## Strings
+## Strings as Method Parameters
 ManagedBass uses Unicode for most strings wherever applicable to be consistent with .Net environment.
 
 This is done by setting `CharSet` to `CharSet.Unicode` and passing `BassFlags.Unicode` flag in the Flags parameter.
 
-### Strings as Method Parameters
 e.g. PInvoking `BASS_StreamCreateFile` defined in bass.dll
 ```csharp
 [DllImport(DllName, CharSet = CharSet.Unicode)]
@@ -62,7 +61,7 @@ public static int CreateStream(string File, long Offset, long Length, BassFlags 
 }
 ```
 
-### Strings as Method Return values or struct members
+## Strings as Method Return values or struct members
 Declared as an `IntPtr` and one of `Marshal.PtrToStringAnsi`, `Marshal.PtrToStringUni` or `Extensions.PtrToStringUtf8` is used as appropriate to convert that to string. 
 
 ---
