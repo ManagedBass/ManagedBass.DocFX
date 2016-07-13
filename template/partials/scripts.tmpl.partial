@@ -1,6 +1,12 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<script type="text/javascript" src="{{_rel}}styles/docfx.vendor.js"></script>
-<script type="text/javascript" src="{{_rel}}styles/docfx.js"></script>
-<script type="text/javascript" src="{{_rel}}styles/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+<script src="{{_rel}}styles/lunr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-url/1.8.6/url.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.3.1/jquery.twbsPagination.min.js"></script>
+
+<script src="{{_rel}}styles/docfx.js"></script>
+<script src="{{_rel}}styles/main.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
