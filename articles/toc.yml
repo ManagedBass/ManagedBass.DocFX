@@ -5,12 +5,10 @@
   href: Migration.md
 - name: AddOns
   href: AddOns.md
+- name: Samples
+  href: Samples.md
 - name: Distribution
   href: Distribution.md
-- name: Changelog
-  href: Changelog.md
-- name: License
-  href: License.md
 - name: Conceptual
   items:
     - name: What is a Channel?
@@ -34,3 +32,7 @@
       href: Getting-Started/Getting-Started-iOS.md
     - name: Xamarin.Mac
       href: Getting-Started/Getting-Started-Mac.md
+- name: Changelog
+  href: Changelog.md
+- name: License
+  href: License.md
