@@ -19,3 +19,4 @@ Make sure that this repository folder and [ManagedBass.PInvoke](https://github/M
 - Normal alignment in collapsable sections.
 - Class members in collapsable sections with expander icon.
 - Better tabular views in api documentation.
+- Using CDNs (Common Delivery Networks).
