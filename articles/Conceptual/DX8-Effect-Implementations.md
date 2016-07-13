@@ -18,18 +18,18 @@ the channel's sample rate can be changed, but there's a delay in effect paramete
 The reason being that, using this method, the effects are applied at the same stage as user DSP functions.
 There are also other advantages to this method, as shown in the table below.
 
-Task | With FX flag | Without FX flag  
------|--------------|-----------------
-Adding & removing | Channel needs to be stopped when adding or removing an effect. | Can add and remove effects without stopping playback.  
-Decoding channels | Not possible. | Automatically used for decoding channels.  
-Speaker assignment | Not possible. | Can be used with speaker assignment.  
-Recording | Not possible. | Automatically used for recording channels.  
-Parameter changes | Audible instantaneously. | Delayed by the length of the channel's buffer; using a smaller buffer means less delay.  
-Channel sample rate | Can only be changed when using DirectX 9. | Can be changed.  
-Effected sample data | Not available. DSP functions, @ManagedBass.Bass.ChannelGetData(System.Int32,System.IntPtr,System.Int32) and @ManagedBass.Bass.ChannelGetLevel(System.Int32) receive the original data (without the effects applied). | The effected data is available to BASS functions.  
+Task                  | With FX flag | Without FX flag  
+----------------------|--------------|-----------------
+Adding & removing     | Channel needs to be stopped when adding or removing an effect. | Can add and remove effects without stopping playback.  
+Decoding channels     | Not possible. | Automatically used for decoding channels.  
+Speaker assignment    | Not possible. | Can be used with speaker assignment.  
+Recording             | Not possible. | Automatically used for recording channels.  
+Parameter changes     | Audible instantaneously. | Delayed by the length of the channel's buffer; using a smaller buffer means less delay.  
+Channel sample rate   | Can only be changed when using DirectX 9. | Can be changed.  
+Effected sample data  | Not available. DSP functions, @ManagedBass.Bass.ChannelGetData(System.Int32,System.IntPtr,System.Int32) and @ManagedBass.Bass.ChannelGetLevel(System.Int32) receive the original data (without the effects applied). | The effected data is available to BASS functions.  
 Effect chain ordering | Not possible. | The effects can be applied in any order you want, and can be intermingled with DSP functions.  
 Channel buffer length | Must be at least 150ms. | No restriction.  
-CPU usage | CPU use is not included in @ManagedBass.Bass.CPUUsage. | CPU use is included in @ManagedBass.Bass.CPUUsage. Also slightly lower CPU usage.  
+CPU usage             | CPU use is not included in @ManagedBass.Bass.CPUUsage. | CPU use is included in @ManagedBass.Bass.CPUUsage. Also slightly lower CPU usage.  
 
 In both cases, DX8 effects are not supported on channels that are more than stereo, and floating-point support requires DirectX 9.
 
