@@ -12,11 +12,13 @@
       <a href="{{_rel}}" class="navbar-brand"><span style="font-size:1.4em;padding:13.5px 12px 0 0;" class="glyphicon glyphicon-home"></span></a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
+      {{^_homepage}}
       <form class="navbar-form navbar-right" role="search" id="search">
         <div class="form-group">
           <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
         </div>
       </form>
+      {{/_homepage}}
     </div>
   </div>
 </nav>
