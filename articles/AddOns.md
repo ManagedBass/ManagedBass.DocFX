@@ -36,3 +36,14 @@ The following AddOns support the BASS Plugin system.
 - BassTta
 - BassWma
 - BassWv
+
+# Currently not wrapped
+Will only be wrapped if someone contributes
+- Bass Tags
+- Bass ZXTune
+- Bass WADSP
+- Bass VST
+- Bass SFX
+- Bass WA
+- Bass DShow
+- Bass XMMS

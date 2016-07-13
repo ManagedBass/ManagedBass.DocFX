@@ -1,4 +1,4 @@
-# Getting Started - iOS
+# Getting Started - Xamarin.iOS
 > This page is in the process of being written. Information here may be inaccurate or inadequate.
 
 1. Install the NuGet package
@@ -17,13 +17,12 @@
 ```
 -gcc_flags "-L$(ProjectDir) -lbass -framework CFNetwork -framework AudioToolbox -framework SystemConfiguration -framework Accelerate -force_load $(ProjectDir)/libbass.a"
 ```
+  - The mtouch arguments may need to be set for every configuration.
 
-## Notes
-- [Here](https://github.com/ManagedBass/Xamarin.iOS.Player) is a very simple example of an iOS audio player app using ManagedBass.
+
+5. Repeat the previous step for any addons you require.
+  - Add **CoreMIDI** framework when using BassMidi.
+  - The Additional mtouch arguments should also include `-lstdc++` when using BassFx or BassApe.
+
+> [Here](https://github.com/ManagedBass/Xamarin.iOS.Player) is a very simple example of an iOS audio player app using ManagedBass.
   Thanks to Brian Pieslak.
-
-- The mtouch arguments may need to be set for every configuration.
-
-- You may need to add **CoreMIDI** framework when using BassMidi.
-
-- The Additional mtouch arguments should also include `-lstdc++` when using BassFx or BassApi.

@@ -23,7 +23,7 @@ All BASS functions are provided as static methods and Configurations are provide
 `partial` class declaration is used to keep the code clean.
 
 ---
-## DllImport
+## Function
 `System.Runtime.InteropServices.DllImport` is applied on a method to be mapped with Bass.
 
 The `EntryPoint` property allows simplifying the Method Names.
@@ -45,7 +45,7 @@ These are automatically resolved by the runtime as:
 `DllName = "__Internal"` is used for iOS
 
 ---
-## Marshalling Strings
+## Strings
 ManagedBass uses Unicode for most strings wherever applicable to be consistent with .Net environment.
 
 This is done by setting `CharSet` to `CharSet.Unicode` and passing `BassFlags.Unicode` flag in the Flags parameter.
@@ -66,12 +66,12 @@ public static int CreateStream(string File, long Offset, long Length, BassFlags 
 Declared as an `IntPtr` and one of `Marshal.PtrToStringAnsi`, `Marshal.PtrToStringUni` or `Extensions.PtrToStringUtf8` is used as appropriate to convert that to string. 
 
 ---
-## Wrapping Plugins
+## Plugins
 The source code for Plugins and Bass.CreateStream methods are generated from same template using T4 Text Template and data stored in XML file.
 The Plugins project is used just for this purpose and does not build any exe/dll.
 
 ---
-## Marshalling Structures
+## Structures
 Unlike Bass.Net, ManagedBass uses structs instead of classes wherever possible to wrap native structures.
 
 The structs are marked with `StructLayout` attribute with `LayoutKind.Sequential`.
@@ -79,13 +79,13 @@ The structs are marked with `StructLayout` attribute with `LayoutKind.Sequential
 Most members are exposed as Properties instead of directly as fields.
 
 ---
-## Marshalling Constants
+## Constants
 Constants are represented by enums.
 
 The enums contatining Constants used as flags are marked with `Flags` attribute.
 
 ---
-## Marshalling Callbacks
+## Callbacks
 Callbacks are marshalled as Delegates.
 
 Some functions hold reference to `Delegates`/`FileProcedures` automatically and free them when the Stream is freed.

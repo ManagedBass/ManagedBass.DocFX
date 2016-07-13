@@ -28,7 +28,9 @@
 - name: Getting Started
   href: Getting-Started/Getting-Started.md
   items:
-    - name: Android
+    - name: Xamarin.Android
       href: Getting-Started/Getting-Started-Android.md
-    - name: iOS
+    - name: Xamarin.iOS
       href: Getting-Started/Getting-Started-iOS.md
+    - name: Xamarin.Mac
+      href: Getting-Started/Getting-Started-Mac.md
