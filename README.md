@@ -16,7 +16,9 @@ Make sure that this repository folder and [ManagedBass.PInvoke](https://github/M
 - Customized titles.
 - View Source is available for class members on mobiles.
 - Thinner Show/Hide Table of Contents button on mobiles.
-- Normal alignment in collapsable sections.
+- Left alignment in collapsable sections.
 - Class members in collapsable sections with expander icon.
 - Better tabular views in api documentation.
 - Using CDNs (Common Delivery Networks).
+- Added See Also section.
+- Extension methods are hidden.
