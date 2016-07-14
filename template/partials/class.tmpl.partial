@@ -272,6 +272,24 @@
   </tbody>
 </table>
 {{/exceptions.0}}
+{{#seealso.0}}
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>{{__global.seealso}}</th>
+    </tr>
+  </thead>
+  <tbody>
+{{/seealso.0}}
+{{#seealso}}
+    <tr>
+      <td>{{{type.specName.0.value}}}</td>
+    </tr>
+{{/seealso}}
+{{#seealso.0}}
+  </tbody>
+</table>
+{{/seealso.0}}
 </div>
 {{/children}}
 {{/children}}

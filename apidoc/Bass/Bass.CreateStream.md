@@ -14,7 +14,7 @@ BassFlags                               | Description
 @'ManagedBass.BassFlags.Float'          | Use 32-bit floating-point sample data. Not really recommended for samples as it (at least) doubles the memory usage.
 @'ManagedBass.BassFlags.SoftwareMixing' | Force the sample to not use hardware mixing.
 @'ManagedBass.BassFlags.Bass3D'         | Enable 3D functionality. This requires that the @'ManagedBass.DeviceInitFlags.Device3D' flag was specified when calling @'ManagedBass.Bass.Init(System.Int32,System.Int32,ManagedBass.DeviceInitFlags,System.IntPtr,System.IntPtr)', and the sample must be mono (Channels = 1).
-@'ManagedBass.BassFlags.FX'             | Enable the old implementation of DirectX 8 effects. See the @'DX8Impl' section for details. Use @'ManagedBass.Bass.ChannelSetFX(System.Int32,ManagedBass.EffectType,System.Int32)' to add effects to the stream.  
+@'ManagedBass.BassFlags.FX'             | Enable the old implementation of DirectX 8 effects. See the @'DX8Impl' section for details. Use @'ManagedBass.Bass.ChannelSetFX(System.Int32,ManagedBass.EffectType,System.Int32)' to add effects to the stream.
 @'ManagedBass.BassFlags.AutoFree'       | Automatically free the stream when playback ends.
 @'ManagedBass.BassFlags.Decode'         | Decode the sample data, without playing it. Use @'ManagedBass.Bass.ChannelGetData(System.Int32,System.IntPtr,System.Int32)' to retrieve decoded sample data. The @'ManagedBass.BassFlags.Bass3D', @'ManagedBass.BassFlags.AutoFree' and @'SpeakerFlags' cannot be used together with this flag. The @'ManagedBass.BassFlags.SoftwareMixing' and @'ManagedBass.BassFlags.FX' flags are also ignored.  
 SPEAKER                                 | @'SpeakerFlags'. These flags have no effect when the stream is more than stereo.
