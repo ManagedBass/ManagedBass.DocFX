@@ -23,6 +23,9 @@
       href: Conceptual/Multi-Channel-Streams.md
     - name: Speaker Assignment Flags
       href: Conceptual/Speaker-Assignment-Flags.md
+    - name: About BassFx Algorithms
+      href: Conceptual/About-FX-Algo.md
+      
 - name: Getting Started
   href: Getting-Started/Getting-Started.md
   items:
