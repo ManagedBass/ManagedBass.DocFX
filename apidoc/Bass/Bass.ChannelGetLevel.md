@@ -16,7 +16,7 @@ uid: ManagedBass.Bass.ChannelGetLevel(System.Int32,System.Single,ManagedBass.Lev
 ---
 
 **Example**
-Replicate @'ManagedBass.Bass.ChannelGetLevel(System.Int32)' but with floating-point levels.
+Replicate <xref:ManagedBass.Bass.ChannelGetLevel(System.Int32)> but with floating-point levels.
 
 ```csharp
 var levels = new float[2];

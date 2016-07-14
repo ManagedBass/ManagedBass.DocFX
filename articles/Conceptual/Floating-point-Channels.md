@@ -10,7 +10,7 @@ The main advantage of floating-point channels, aside from the increased resoluti
 This makes them particularly good for DSP/FX, because the quality is not degraded as the data passes through a chain of DSP/FX.
 So even if the output device is not capable of outputting the channel in its full quality, the quality is still improved.
 
-Floating-point sample data ranges from -1 to +1, but as mentioned above, it is not clipped to this range until output, so it is possible that @'ManagedBass.DSPProcedure' callback functions or @'ManagedBass.Bass.ChannelGetData(System.Int32,System.IntPtr,System.Int32)' calls could receive data outside of this range.
+Floating-point sample data ranges from -1 to +1, but as mentioned above, it is not clipped to this range until output, so it is possible that <xref:ManagedBass.DSPProcedure> callback functions or <xref:ManagedBass.Bass.ChannelGetData(System.Int32,System.IntPtr,System.Int32)> calls could receive data outside of this range.
 
 When a floating-point channel is played, it is converted to whatever resolution the output device supports in the final mix.
 

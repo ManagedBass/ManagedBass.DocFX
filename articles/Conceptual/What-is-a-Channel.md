@@ -5,9 +5,9 @@ Each "Channel" function can be used with one or more of these channel types.
 ## The types of channel
 Type     | Returned by
 ---------|--------------
-HCHANNEL | @'ManagedBass.Bass.SampleGetChannel(System.Int32,System.Boolean)'
+HCHANNEL | <xref:ManagedBass.Bass.SampleGetChannel(System.Int32,System.Boolean)>
 HSTREAM  | Bass.CreateStream and add-on provided functions
 HMUSIC   | Bass.MusicLoad
-HRECORD  | @'ManagedBass.Bass.RecordStart(System.Int32,System.Int32,ManagedBass.BassFlags,ManagedBass.RecordProcedure,System.IntPtr)'
+HRECORD  | <xref:ManagedBass.Bass.RecordStart(System.Int32,System.Int32,ManagedBass.BassFlags,ManagedBass.RecordProcedure,System.IntPtr)>
 
-A sample stream (HSTREAM) or MOD music (HMUSIC) that has been created with the @'ManagedBass.BassFlags.Decode' flag is sometimes referred to as a "decoding channel".
+A sample stream (HSTREAM) or MOD music (HMUSIC) that has been created with the <xref:ManagedBass.BassFlags.Decode> flag is sometimes referred to as a "decoding channel".
