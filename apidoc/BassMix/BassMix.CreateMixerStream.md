@@ -1,5 +1,5 @@
 ---
-uid: ManagedBass.Mix.BassMix.CreateStream(System.Int32,System.Int32,ManagedBass.BassFlags)
+uid: ManagedBass.Mix.BassMix.CreateMixerStream(System.Int32,System.Int32,ManagedBass.BassFlags)
 syntax:
   parameters:
     - id: Flags
