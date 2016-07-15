@@ -17,3 +17,18 @@ BassFlags                                   | Description
 <xref:ManagedBass.BassFlags.Decode>         | Render the sample data, without playing it. Use <xref:ManagedBass.Bass.ChannelGetData(System.Int32,System.IntPtr,System.Int32)> to retrieve the sample data. The <xref:ManagedBass.BassFlags.Bass3D>, <xref:ManagedBass.BassFlags.AutoFree> and <xref:SpeakerFlags> can not be used together with this flag. The <xref:ManagedBass.BassFlags.SoftwareMixing> and <xref:ManagedBass.BassFlags.FX> are also ignored.
 <xref:ManagedBass.BassFlags.SplitSlave>     | Only get data from the splitter buffer, not directly from the source.
 SPEAKER                                     | <xref:SpeakerFlags>. These flags have no effect when the stream is more than stereo.
+
+---
+uid: ManagedBass.Mix.BassMix.CreateSplitStream(System.Int32,ManagedBass.BassFlags,System.Int32[])
+---
+
+**Example**  
+Create a splitter stream from a stereo source with the channels reversed.
+
+```csharp
+// channel mapping: left = source right, right = source left
+var chanmap = { 1, 0, -1 };
+
+// create the splitter stream
+var split = Bass.CreateSplitStream(source, 0, chanmap);
+```
