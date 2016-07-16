@@ -1,5 +1,7 @@
 ![Logo](https://raw.githubusercontent.com/ManagedBass/ManagedBass/master/ManagedBass.png)
 # ManagedBass
+[![Build Status](https://img.shields.io/appveyor/ci/MathewSachin/ManagedBass/master.svg?style=flat-square)](https://ci.appveyor.com/project/MathewSachin/ManagedBass-PInvoke)
+[![Release](https://img.shields.io/nuget/v/ManagedBass.svg?style=flat-square)](https://nuget.org/packages/ManagedBass.PInvoke)  
 **ManagedBass** is Free Open-Source .Net Wrapper for un4seen [BASS](http://un4seen.com/bass.html) including Managed Types.
 **ManagedBass** depends on **ManagedBass.PInvoke**.
 

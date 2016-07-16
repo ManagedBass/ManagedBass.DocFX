@@ -23,7 +23,7 @@ install:
   - git clone -q https://github.com/ManagedBass/ManagedBass.PInvoke.git C:\projects\ManagedBass.PInvoke
 
   # Clone ManagedBass for Source Code
-  - git clone -q https://github.com/ManagedBass/ManagedBasss.git C:\projects\ManagedBass
+  - git clone -q https://github.com/ManagedBass/ManagedBass.git C:\projects\ManagedBass
 
   # Restore packages for ManagedBass
   - nuget restore C:\projects\ManagedBass\src\ManagedBass.sln
