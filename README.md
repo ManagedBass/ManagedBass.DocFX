@@ -3,9 +3,6 @@ This repository holds the data required to generate the ManagedBass documentatio
 
 An AppVeyor script is used to update the website: [ManagedBass.GitHub.io](https://ManagedBass.GitHub.io) on every push to this repository.
 
-## Building Locally
-Make sure that this repository folder and [ManagedBass.PInvoke](https://github/ManagedBass/ManagedBass.PInvoke) repository folder are under a common folder.
-
 ## Differences from Default Template
 - Uses Floating Back to Top smooth scroll button which hides while scrolling.
 - Breadcrumb is hidden on mobiles.
@@ -22,3 +19,4 @@ Make sure that this repository folder and [ManagedBass.PInvoke](https://github/M
 - Using CDNs (Common Delivery Networks).
 - Added See Also section.
 - Extension methods are hidden.
+- External References to MSDN.

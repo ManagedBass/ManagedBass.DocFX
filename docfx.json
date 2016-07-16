@@ -4,7 +4,10 @@
       "src": [
         {
           "cwd": "../",
-          "files": ["ManagedBass.PInvoke/src/Windows/Windows.csproj"],
+          "files": [
+            "ManagedBass.PInvoke/src/Windows/Windows.csproj",
+            "ManagedBass/src/Windows/Windows.csproj"
+          ],
           "exclude": [
             "**/obj/**",
             "**/bin/**"
