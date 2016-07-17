@@ -1,7 +1,7 @@
 .expander:after {
     font-family: 'Glyphicons Halflings';
     content: "\e260";
-    float: right;
+    margin-left: 5px;
     color: grey;
     font-size: small;
 }
