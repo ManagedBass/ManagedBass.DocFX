@@ -151,9 +151,6 @@ header .navbar {
 .navbar-collapse {
   margin: 0 -15px;
 }
-.subnav {
-  min-height: 40px;
-}
 
 .inheritance h5, .inheritedMembers h5{
   padding-bottom: 5px;
@@ -177,7 +174,7 @@ article section {
 }*/
 .breadcrumb {
   margin: 0;
-  padding: 10px 0;
+  padding: 2px 0;
   background-color: inherit;
   white-space: nowrap;
 }

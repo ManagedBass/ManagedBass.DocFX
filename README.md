@@ -5,11 +5,11 @@ An AppVeyor script is used to update the website: [ManagedBass.GitHub.io](https:
 
 ## Differences from Default Template
 - Uses Floating Back to Top smooth scroll button which hides while scrolling.
-- Breadcrumb is hidden on mobiles.
+- Breadcrumb fits content.
 - Conceptual documentation comes below remarks.
 - Markdown tables are identical to the other tables.
 - Customized Footer.
-- Uses White navbar with Home button.
+- Navbar logo replaced with Home button.
 - Customized titles.
 - View Source is available for class members on mobiles.
 - Thinner Show/Hide Table of Contents button on mobiles.
@@ -19,4 +19,5 @@ An AppVeyor script is used to update the website: [ManagedBass.GitHub.io](https:
 - Using CDNs (Common Delivery Networks).
 - Added See Also section.
 - Extension methods are hidden.
-- External References to MSDN.
+- Added External References to MSDN.
+- Using `L` for showing inheritance.

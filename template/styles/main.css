@@ -25,3 +25,7 @@ a.back-to-top {
     -moz-border-radius: 30px;
     border-radius: 30px;
 }
+
+.breadcrumbnav {
+    min-height: 0;
+}
