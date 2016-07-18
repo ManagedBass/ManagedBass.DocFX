@@ -262,7 +262,7 @@ article section {
 .search-results.ng-hide {
   display: none;
 }
-.search-results-container {
+.search-results-container-fluid {
   padding-bottom: 1em;
   border-top: 1px solid #111;
   background: rgba(25, 25, 25, 0.5);
