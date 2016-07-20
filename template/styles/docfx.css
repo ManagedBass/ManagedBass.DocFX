@@ -363,7 +363,7 @@ article section {
 .sidetoc {
   position: fixed;
   width: 260px;
-  top: 138px;
+  top: 120px;
   left: 0;
   bottom: 0;
   margin: 0;
@@ -483,32 +483,10 @@ body .toc{
   width: 260px;
   left: 0;
   background-color: #f1f1f1;
-  padding: 15px;
+  padding: 5px;
   margin: 0;
   border-right: 1px solid #e7e7e7;
   z-index: 1;
-}
-.toc-filter {
-  border-radius: 5px;
-  background: #fff;
-  color: #666666;
-  padding: 5px;
-  position: relative;
-  margin: 0 5px 0 5px;
-}
-.toc-filter > input {
-  border: 0;
-  color: #666666;
-  padding-left: 20px;
-  width: 100%;
-}
-.toc-filter > input:focus {
-  outline: 0;
-}
-.toc-filter > .filter-icon {
-  position: absolute;
-  top: 10px;
-  left: 5px;
 }
 .article {
   margin-top: 120px;
@@ -520,7 +498,7 @@ body .toc{
 }
 
 .article.grid-right {
-  margin-left: 280px;
+  margin-left: 250px;
 }
 
 .inheritance hr {

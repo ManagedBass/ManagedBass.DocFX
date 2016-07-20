@@ -37,3 +37,7 @@ a.back-to-top:hover {
 .breadcrumbnav {
     min-height: 0;
 }
+
+#toc_filter_input {
+    width: 100%;
+}
