@@ -1,4 +1,12 @@
-# Changelog
+# Changelog for ManagedBass.PInvoke
+
+## v0.4.0
+* Fix typo: `BassFlags.MusicSensitiveRamping`.
+* Added public constructors for `BassException`.
+* BassCd Plugin system is windows only, since .cda files are Windows only.
+* Updated `Bass.RecordStart` period overload documentation.
+* Removed `Bass.PluginLoadDirectory` from Android.
+* `Bass.IsSlidableAttribute` marked obsolete. See the online API documentation for knowing about Slidable attributes.
 
 ## v0.3.2
 * Fixed typo: `AsioFuture.GetOutputMeter`.

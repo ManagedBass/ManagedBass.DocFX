@@ -26,5 +26,5 @@ Name                                                                | Descriptio
 [BPM](https://github.com/ManagedBass/BPM)                           | Usage of BassFx BPM features.
 [3DTest](https://github.com/ManagedBass/3DTest)                     | Working with 3D.
 [PitchTracker](https://github.com/ManagedBass/PitchTracker)         | Pitch detection (adopted from http://pitchtracker.codeplex.com)
-
-and more...
+[RecordingTest](https://github.com/ManagedBass/RecordingTest)       | Using Managed Api for Recording and Loopback.
+[Revic](https://github.com/ManagedBass/Revic)                       | Demonstration of the MediaPlayer Api.
