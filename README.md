@@ -21,3 +21,4 @@ An AppVeyor script is used to update the website: [ManagedBass.GitHub.io](https:
 - Extension methods are hidden.
 - Added External References to MSDN.
 - Using `L` for showing inheritance.
+- Bootstrap docs style affix.
