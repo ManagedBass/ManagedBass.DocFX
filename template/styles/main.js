@@ -2,27 +2,18 @@ $(document).ready(function ()
 {
     $("table").addClass("table table-bordered table-striped table-condensed");
 
-    var scrollTimeout = null;
-    var amountScrolled = 300;
-
+    var offset = 220;
+    var duration = 500;
+    
     $(window).scroll(function () {
-        $('a.back-to-top').fadeOut('fast');
-
-        if (scrollTimeout)
-            clearTimeout(scrollTimeout);
-        
-        scrollTimeout = setTimeout(function ()
-        {
-            if ($(window).scrollTop() > amountScrolled)
-                $('a.back-to-top').fadeIn('fast');
-
-            else $('a.back-to-top').fadeOut('fast');
-        }, 500);
+        if ($(this).scrollTop() > offset)
+            $('a.back-to-top').fadeIn(duration);
+        else $('a.back-to-top').fadeOut(duration);
     });
-
-    $('a.back-to-top').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 700);
-
+    
+    $('a.back-to-top').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, duration);
         return false;
-    })
+    });
 });

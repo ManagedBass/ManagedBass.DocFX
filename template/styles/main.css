@@ -11,19 +11,27 @@
 }
 
 a.back-to-top {
+    background-color:#F44336;
+    background:#F44336;
     display: none;
     width: 40px;
     height: 40px;
-    background-color: lightgray;
     z-index: 9999;
     position: fixed;
     text-align: center;
     padding: 10px 0 0 0;
     right: 20px;
     bottom: 20px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;
+}
+
+a.back-to-top:hover {
+    transform: scale(1.1);
 }
 
 .breadcrumbnav {
