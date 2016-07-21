@@ -296,7 +296,7 @@ article section {
 /* Search results display*/
 #search-results {
   max-width: 960px !important;
-  margin-top: 120px;
+  margin-top: 90px;
   margin-bottom: 115px;
   margin-left: auto;
   margin-right: auto;
@@ -489,7 +489,7 @@ body .toc{
   z-index: 1;
 }
 .article {
-  margin-top: 90px;
+  margin-top: 80px;
   margin-bottom: 115px;
 }
 
@@ -513,13 +513,12 @@ body .toc{
 .affix {
   max-height: 100%;
   overflow: hidden;
-  top: 50px;
+  top: 100px;
   bottom: 50px;
 }
 
 /* heading */
 .affix h5 {
-  margin-top: 50px;
   padding-left: 10px;
   font-size: 12px;
 }
@@ -649,7 +648,7 @@ footer {
   }
   /* TOC display for responsive */
   .article {
-    margin-top: 30px !important;
+    margin-top: 5px !important;
   }
   header {
     position: static;

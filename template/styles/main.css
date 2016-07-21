@@ -41,3 +41,7 @@ a.back-to-top:hover {
 #toc_filter_input {
     width: 100%;
 }
+
+#selector {
+    margin-top: 10px;
+}

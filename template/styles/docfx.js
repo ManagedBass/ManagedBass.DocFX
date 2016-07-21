@@ -496,6 +496,12 @@ $(function () {
             container.scrollTop(container.scrollTop() + top - 100);
         }
       })
+
+      $("#selector").html(formSelector(hierarchy));
+
+      $('#selector select').change(function(){
+          window.location.hash = $(this).val();
+      });
     }
 
     function getHierarchy() {
@@ -598,6 +604,40 @@ $(function () {
         html += '</li>';
       }
       html += '</ul>';
+      return html;
+    }
+  }
+
+  function formSelector(item)
+  {
+    var level = 0;
+    var model = {
+      items: item
+    };
+
+    return '<select class="form-control">' + getOptions(model) + '</select>';
+
+    function getOptions(model) {
+      if (!model || !model.items) return null;
+      var l = model.items.length;
+      if (l === 0) return null;
+      var html = '';
+
+      level++;
+      for (var i = 0; i < l; i++) {
+        var item = model.items[i];
+        var href = item.href;
+        var name = item.name;
+        if (!name) continue;
+        html += '<option value="' + href.substring(1) + '">';
+
+        for (var j = 1; j < level; ++j)
+          html += '&nbsp;';
+
+        html += name + '</option>';
+        html += getOptions(item) || '';
+      }
+
       return html;
     }
   }
