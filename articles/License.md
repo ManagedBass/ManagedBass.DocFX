@@ -1,3 +1,7 @@
+---
+uid: License
+---
+
 # The MIT License
 Copyright (c) 2016 [Mathew Sachin](https://github.com/MathewSachin)
 

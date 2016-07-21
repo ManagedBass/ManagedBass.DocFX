@@ -1,14 +1,14 @@
 # AddOns
 The following AddOns (excluding Plugins) are supported:
-- BassAsio
-- BassCd
-- BassEnc
-- BassFx
-- BassMidi
-- BassMix
-- BassWasapi
-- BassWinamp
-- BassWma
+- <xref:ManagedBass.Asio.BassAsio>
+- <xref:ManagedBass.Cd.BassCd>
+- <xref:ManagedBass.Enc.BassEnc>
+- <xref:ManagedBass.Fx.BassFx>
+- <xref:ManagedBass.Midi.BassMidi>
+- <xref:ManagedBass.Mix.BassMix>
+- <xref:ManagedBass.Wasapi.BassWasapi>
+- <xref:ManagedBass.Winamp.BassWinamp>
+- <xref:ManagedBass.Wma.BassWma>
 
 # Plugins
 A Plugin plugs into standard BASS functions like sample or stream creation to provide support for more audio formats.

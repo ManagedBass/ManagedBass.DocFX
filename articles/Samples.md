@@ -1,5 +1,9 @@
+---
+uid: Samples
+---
+
 # Samples
-Lots of sample repositories are available on the GitHub organization.
+Here is a list of sample repositories that are available on the GitHub organization.
 
 ## [Xamarin.Android](https://github.com/ManagedBass/ManagedBass.Sample.Android)
 Simple Sine Wave Player
@@ -27,4 +31,4 @@ Name                                                                | Descriptio
 [3DTest](https://github.com/ManagedBass/3DTest)                     | Working with 3D.
 [PitchTracker](https://github.com/ManagedBass/PitchTracker)         | Pitch detection (adopted from http://pitchtracker.codeplex.com)
 [RecordingTest](https://github.com/ManagedBass/RecordingTest)       | Using Managed Api for Recording and Loopback.
-[Revic](https://github.com/ManagedBass/Revic)                       | Demonstration of the MediaPlayer Api.
+[Revic](https://github.com/ManagedBass/Revic)                       | Demonstration of the <xref:ManagedBass.MediaPlayer> Api.

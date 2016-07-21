@@ -1,14 +1,10 @@
 
-- name: Introduction
-  href: intro.md
 - name: Migrating from Bass.Net
   href: Migration.md
 - name: AddOns
   href: AddOns.md
 - name: Samples
   href: Samples.md
-- name: Distribution
-  href: Distribution.md
 - name: Conceptual
   items:
     - name: What is a Channel?
@@ -27,7 +23,6 @@
       href: Conceptual/About-FX-Algo.md
       
 - name: Getting Started
-  href: Getting-Started/Getting-Started.md
   items:
     - name: Xamarin.Android
       href: Getting-Started/Getting-Started-Android.md

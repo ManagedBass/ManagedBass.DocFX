@@ -276,7 +276,7 @@ $(function () {
       if (tocPath) tocPath = tocPath.replace(/\\/g, '/');
       if (navbarPath) navbarPath = navbarPath.replace(/\\/g, '/');
       $.get(navbarPath, function (data) {
-        $(data).find("#toc>ul").appendTo("#navbar");
+        $(data).find("#toc>ul>li").appendTo("#navbarToc");
         if ($('#search-results').length !== 0) {
           $('#search').show();
           $('body').trigger("searchEvent");
@@ -286,10 +286,9 @@ $(function () {
         if (index > -1) {
           navrel = navbarPath.substr(0, index + 1);
         }
-        $('#navbar>ul').addClass('navbar-nav');
         var currentAbsPath = getAbsolutePath(window.location.pathname);
         // set active item
-        $('#navbar').find('a[href]').each(function (i, e) {
+        $('#navbarToc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
           if (isRelativePath(href)) {
             href = navrel + href;

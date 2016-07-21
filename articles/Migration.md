@@ -6,7 +6,7 @@ Licensing
 ----------------------------------------------------------------------------------
 Bass.Net needs to be licensed for commercial/non-commercial use and a Registration Key needs to be applied to suppress popups.
 
-No such headaches with ManagedBass. ManagedBass is free to use and open-source.
+No such headaches with ManagedBass. It's free to use and open-sourced under the [MIT License](xref:License).
 
 > Bass and AddOns still need to be licensed.
 
