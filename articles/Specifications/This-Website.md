@@ -1,0 +1,55 @@
+# This Website
+This website hosted on GitHub pages provides conceptual documentation as well as API documentation for Windows version of [ManagedBass][MB] and [ManagedBass.PInvoke][MB.PInvoke].
+
+The website is generated using [DocFX][DocFX] which augments markdown files into the API documentation.
+This allows to add examples, supported flags etc. in the website while keeping the source code clean.
+
+The data to build the website is hosted on [ManagedBass.DocFX][MB.DocFX] repository.
+This website is hosted on GitHub pages repository: [ManagedBass.GitHub.io][MB.Page], but nothing is pushed manually into that.
+
+## Build Process
+An AppVeyor script is used to update the website: [ManagedBass.GitHub.io][MB.Site] on every push to the [ManagedBass.DocFX][MB.DocFX] repository.
+
+1. Source code is pushed to [ManagedBass.DocFX][MB.DocFX] (**NOT to [ManagedBass.GitHub.io][MB.Page]**)
+2. AppVeyor build is triggered by webhooks
+   - [DocFX][DocFX] is downloaded.
+   - [ManagedBass][MB], [ManagedBass.PInvoke][MB.PInvoke] and [ManagedBass.GitHub.io][MB.Page] repositories are cloned.
+   - docfx.exe is extracted and run.
+   - Content in [ManagedBass.GitHub.io][MB.Page] is replaced by that from generated _site folder.
+   - Changes are commited and pushed to [ManagedBass.GitHub.io][MB.Page].
+3. Site gets published on GitHub pages.
+
+The process roughly takes 5mins.
+
+## Custom DocFX Template
+The default template seemed inadequate, so it was customized as neccessary.
+
+Here is a list of changes made:
+- Uses Floating Back to Top button.
+- Back to Top botton scrolls smoothly.
+- Breadcrumb fits content.
+- Conceptual documentation comes below remarks.
+- Markdown tables are identical to the other tables.
+- Customized Footer.
+- Navbar logo replaced with Home button.
+- Customized titles.
+- View Source is available for class members on mobiles.
+- Thinner Show/Hide Table of Contents button on mobiles.
+- Left alignment in collapsable sections.
+- Class members in collapsable sections with expander icon.
+- Better tabular views in api documentation.
+- Using CDNs (Common Delivery Networks).
+- Added See Also section.
+- Extension methods are hidden.
+- Added External References to MSDN.
+- Using `L` for showing inheritance.
+- Bootstrap docs style affix.
+- Select box for navigation.
+- Tabular view for namespaces.
+
+[MB]: https://github.com/ManagedBass/ManagedBass
+[MB.PInvoke]: https://github.com/ManagedBass/ManagedBass.PInvoke
+[MB.DocFX]: https://github.com/ManagedBass/ManagedBass.DocFX
+[MB.Page]: https://github.com/ManagedBass/ManagedBass.GitHub.io
+[MB.Site]: https://ManagedBass.GitHub.io
+[DocFX]: http://dotnet.github.io/docfx

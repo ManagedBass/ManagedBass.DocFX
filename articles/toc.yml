@@ -30,6 +30,12 @@
       href: Getting-Started/Getting-Started-iOS.md
     - name: Xamarin.Mac
       href: Getting-Started/Getting-Started-Mac.md
+- name: Specifications
+  items:
+    - name: Wrapping Bass
+      href: Specifications/Wrapping-Bass.md
+    - name: This Website
+      href: Specifications/This-Website.md
 - name: Changelog
   href: Changelog.md
 - name: License
