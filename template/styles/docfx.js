@@ -484,24 +484,29 @@ $(function () {
       $("#affix").append(html);
       $('#affix').on('activate.bs.scrollspy', function (e) {
         if (e.target) {
-            if ($(e.target).find('li.active').length > 0)
-            {
-              return;
-            }
-            var top = $(e.target).position().top;
-            $(e.target).parents('li').each(function (i, e) {
-              top += $(e).position().top;
-            });
-            var container = $('#affix > ul');
-            container.scrollTop(container.scrollTop() + top - 100);
+          if ($(e.target).find('li.active').length > 0) {
+            return;
+          }
+          var top = $(e.target).position().top;
+          $(e.target).parents('li').each(function (i, e) {
+            top += $(e).position().top;
+          });
+          var container = $('#affix > ul');
+          container.scrollTop(container.scrollTop() + top - 100);
         }
       })
 
       $("#selector").html(formSelector(hierarchy));
 
-      $('#selector select').change(function(){
-          window.location.hash = $(this).val();
+      $('#selector select').change(function () {
+        window.location.hash = $(this).val();
       });
+    }
+    else
+    {
+      $("#articleContainer").removeClass("col-md-9");
+      $("#articleContainer").addClass("col-md-12");
+      $("#selector").hide();
     }
 
     function getHierarchy() {
