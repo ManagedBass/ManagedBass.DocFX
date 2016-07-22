@@ -1,7 +1,7 @@
 $(document).ready(function ()
 {
     $("table").addClass("table table-bordered table-striped table-condensed");
-    $("#selector").addClass("visible-xs");
+    $("#selector").addClass("hidden-lg hidden-md");
     
     var offset = 220;
     var duration = 500;

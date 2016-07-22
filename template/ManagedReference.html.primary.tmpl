@@ -24,11 +24,9 @@
       <div role="main" class="container-fluid body-content hide-when-search">
       {{^_disableToc}}
         {{>partials/toc}}
-        <div id="selector"></div>
         <div class="article row grid-right">
       {{/_disableToc}}
       {{#_disableToc}}
-        <div id="selector"></div>
         <div class="article row grid">
       {{/_disableToc}}
           {{#_disableAffix}}
@@ -37,6 +35,7 @@
           {{^_disableAffix}}
           <div class="col-md-9" id="articleContainer">
           {{/_disableAffix}}
+            <div id="selector"></div>
             <article class="content wrap" id="_content">
             {{#isNamespace}}
               {{>partials/namespace}}
