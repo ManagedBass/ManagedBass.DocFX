@@ -1,4 +1,4 @@
-# <div class="text-info">ManagedBass</div>
+# <span class="text-info">ManagedBass</span> <a class="badge" id="MBNuGet" href="https://www.nuget.org/packages/ManagedBass/" title="NuGet Downloads Count"></a>
 
 ---------------
 Free Open-Source .Net Wrapper for un4seen [BASS](http://un4seen.com/bass.html) including Managed Types.  
@@ -9,7 +9,7 @@ The existing BASS.NET wrapper is closed-source and needs to be licensed for comm
 ManagedBass is free and open-souce.  
 Also, it tries to make the API friendly to a .NET developer.
 
-# ManagedBass.PInvoke
+## ManagedBass.PInvoke <a class="badge" id="MBPNuGet" href="https://www.nuget.org/packages/ManagedBass.PInvoke/" title="NuGet Downloads Count"></a>
 .Net interop library for un4seen [BASS](http://un4seen.com/bass.html) audio library.
 
 > If you just need the basic functionality of getting BASS API wrapped, always prefer **ManagedBass.PInvoke** because it is much more API stable.
@@ -17,7 +17,7 @@ Also, it tries to make the API friendly to a .NET developer.
 Lots of <xref:Samples> are available on the [GitHub Organization](https://github.com/ManagedBass) to get you started.
 
 # Distribution
-ManagedBass.PInvoke is distributed as a NuGet package.
+ManagedBass is distributed as a NuGet package.
 Also, being open-source you can build it yourself (requires Visual Studio 2015 with Xamarin).
 The Linux part needs to be built manually in any case since there is no NuGet support for Linux as of June 2016.
 
@@ -39,16 +39,15 @@ The native BASS libraries are NOT included and need to be downloaded separately 
 Place the native BASS libraries in the project output directory.  
 
 # Getting Started
-Here are some guides to get you started with ManagedBass.PInvoke.
+Here are the general steps to get you started with ManagedBass.
 
 > It is assumed that you are familiar with your IDE (whether Xamarin Studio or Visual Studio) and the NuGet package manager.
 
 ---
-The general steps are:
 
 1. Install the NuGet package, in the Package Manager Console type: (you may also use the GUI)
    ```powershell
-   Install-Package ManagedBass.PInvoke
+   Install-Package ManagedBass
    ```
 
 2. Download bass libraries as per the platform from [here](http://www.un4seen.com/bass.html).

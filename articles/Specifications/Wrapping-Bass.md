@@ -81,7 +81,7 @@ Most members are exposed as Properties instead of directly as fields.
 ## Constants
 Constants are represented by enums.
 
-The enums contatining Constants used as flags are marked with `Flags` attribute.
+The enums containing Constants used as flags are marked with `Flags` attribute.
 
 ---
 ## Callbacks

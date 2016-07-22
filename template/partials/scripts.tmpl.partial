@@ -10,3 +10,8 @@
 <script src="{{_rel}}styles/docfx.js"></script>
 <script src="{{_rel}}styles/main.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+{{#_homepage}}
+<!-- NuGet Download Counts -->
+<script src="{{_rel}}styles/nugetDownloadsBadge.js"></script>
+{{/_homepage}}
