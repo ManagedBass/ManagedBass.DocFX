@@ -105,11 +105,11 @@
 <h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
 {{#children}}
 <h4 id="{{id}}" data-uid="{{uid}}">
-  <a href="#collapsible-{{id}}" data-toggle="collapse" class="expander collapsed">
+  <a href="#collapsible-{{id}}" data-toggle="collapse" class="expander">
     {{name.0.value}}
   </a>
 </h4>
-<div id="collapsible-{{id}}" class="container-fluid collapse">
+<div id="collapsible-{{id}}" class="container-fluid collapse in">
 {{^_disableContribution}}
 <div>
   {{#docurl}}
