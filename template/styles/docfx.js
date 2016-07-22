@@ -504,8 +504,8 @@ $(function () {
     }
     else
     {
-      $("#articleContainer").removeClass("col-sm-9");
-      $("#articleContainer").addClass("col-sm-12");
+      $("#articleContainer").removeClass("col-md-9");
+      $("#articleContainer").addClass("col-md-12");
       $("#selector").hide();
     }
 
