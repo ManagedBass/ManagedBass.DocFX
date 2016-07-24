@@ -45,3 +45,19 @@ a.back-to-top:hover {
 #selector {
     margin-top: 10px;
 }
+
+.navbar-inverse {
+    background: #4C6E8A
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-text { 
+    color: #D9EDF7; 
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover { 
+    color: #fff; 
+    background-color: #143653; 
+}

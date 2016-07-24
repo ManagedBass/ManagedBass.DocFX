@@ -21,7 +21,7 @@ An AppVeyor script is used to update the website: [ManagedBass.GitHub.io][MB.Sit
 
 The process roughly takes 5mins.
 
-## Custom DocFX Template
+## DocFX Template
 The default template seemed inadequate, so it was customized as neccessary.
 
 Here is a list of changes made:
@@ -46,6 +46,12 @@ Here is a list of changes made:
 - Bootstrap docs style affix.
 - Select box for navigation.
 - Tabular view for namespaces.
+
+## JS Frameworks
+- jQuery
+- Bootstrap
+- Highlight.js
+- Lunr.js
 
 [MB]: https://github.com/ManagedBass/ManagedBass
 [MB.PInvoke]: https://github.com/ManagedBass/ManagedBass.PInvoke
