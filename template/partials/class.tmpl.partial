@@ -34,6 +34,7 @@
 {{/inheritedMembers.0}}
 <h6><strong>{{__global.namespace}}</strong>: {{namespace}}</h6>
 <h6><strong>{{__global.assembly}}</strong>: {{assemblies.0}}.dll</h6>
+{{^inEnum}}
 <h5 id="{{id}}_syntax">{{__global.syntax}}</h5>
 <div class="codewrapper">
   <pre><code class="lang-{{_lang}} hljs">{{syntax.content.0.value}}</code></pre>
@@ -90,6 +91,7 @@
   </tbody>
 </table>
 {{/syntax.typeParameters.0}}
+{{/inEnum}}
 {{#remarks}}
 <h5 id="{{id}}_remarks"><strong>{{__global.remarks}}</strong></h5>
 <div class="markdown level0 remarks">{{{remarks}}}</div>
@@ -181,6 +183,7 @@
   </tbody>
 </table>
 {{/typeParameters.0}}
+{{^inEnum}}
 {{#fieldValue}}
 <h5 class="fieldValue">{{__global.fieldValue}}</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -194,6 +197,7 @@
   </tbody>
 </table>
 {{/fieldValue}}
+{{/inEnum}}
 {{#propertyValue}}
 <h5 class="propertyValue">{{__global.propertyValue}}</h5>
 <table class="table table-bordered table-striped table-condensed">
