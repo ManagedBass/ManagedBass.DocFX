@@ -104,7 +104,9 @@
 {{{.}}}
 {{/example}}
 {{#children}}
+{{^inEnum}}
 <h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
+{{/inEnum}}
 {{#children}}
 <h4 id="{{id}}" data-uid="{{uid}}">
   <a href="#collapsible-{{id}}" data-toggle="collapse" class="expander">

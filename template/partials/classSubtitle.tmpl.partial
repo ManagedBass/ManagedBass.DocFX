@@ -3,9 +3,7 @@
 {{__global.constructorsInSubtitle}}
 {{/inConstructor}}
 {{#inField}}
-{{^inEnum}}
 {{__global.fieldsInSubtitle}}
-{{/inEnum}}
 {{/inField}}
 {{#inProperty}}
 {{__global.propertiesInSubtitle}}
