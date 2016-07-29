@@ -61,3 +61,7 @@ a.back-to-top:hover {
     color: #fff; 
     background-color: #143653; 
 }
+
+article .collapse {
+    padding-left: 0;
+}
