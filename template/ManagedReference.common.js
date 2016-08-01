@@ -21,6 +21,16 @@ exports.transform = function (model)  {
 
   if (!model) return null;
 
+  if (model.type.toLowerCase() == 'enum')
+  {
+    for (var i = 0; i < model.children.length; ++i)
+    {
+      var enumMember = model.children[i];
+      var declaration = enumMember.syntax.content[0].value;
+      enumMember.enumValue = declaration.substring(declaration.indexOf("=") + 2);
+    }
+  }
+  
   langs = model.langs;
   handleItem(model, model.newFileRepository);
   if (model.children) {

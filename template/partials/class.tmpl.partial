@@ -128,11 +128,16 @@
 </div>
 {{/_disableContribution}}
 <div class="markdown level1 summary">{{{summary}}}</div>
-<h5 class="decalaration">{{__global.declaration}}</h5>
 {{#syntax}}
+{{#inEnum}}
+<b>Value</b>: {{enumValue}}
+{{/inEnum}}
+{{^inEnum}}
+<h5 class="decalaration">{{__global.declaration}}</h5>
 <div class="codewrapper">
   <pre><code class="lang-{{_lang}} hljs">{{syntax.content.0.value}}</code></pre>
 </div>
+{{/inEnum}}
 {{#parameters.0}}
 <h5 class="parameters">{{__global.parameters}}</h5>
 <table class="table table-bordered table-striped table-condensed">
