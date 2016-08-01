@@ -73,18 +73,14 @@
 {{#syntax.typeParameters.0}}
 <h5 class="typeParameters">{{__global.typeParameters}}</h5>
 <table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>{{__global.name}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  </thead>
   <tbody>
 {{/syntax.typeParameters.0}}
 {{#syntax.typeParameters}}
     <tr>
-      <td><em>{{{id}}}</em></td>
-      <td>{{{description}}}</td>
+      <td>
+        <em>{{{id}}}</em>
+        <p>{{{description}}}</p>
+      </td>
     </tr>
 {{/syntax.typeParameters}}
 {{#syntax.typeParameters.0}}
@@ -172,18 +168,14 @@
 {{#typeParameters.0}}
 <h5 class="typeParameters">{{__global.typeParameters}}</h5>
 <table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>{{__global.name}}</th>
-      <th>{{__global.description}}</th>
-    </tr>
-  </thead>
   <tbody>
 {{/typeParameters.0}}
 {{#typeParameters}}
     <tr>
-      <td><em>{{{id}}}</em></td>
-      <td>{{{description}}}</td>
+      <td>
+        <em>{{{id}}}</em>
+        <p>{{{description}}}</p>
+      </td>
     </tr>
 {{/typeParameters}}
 {{#typeParameters.0}}
@@ -265,18 +257,14 @@
 {{#exceptions.0}}
 <h5 class="exceptions">{{__global.exceptions}}</h5>
 <table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>{{__global.type}}</th>
-      <th>{{__global.condition}}</th>
-    </tr>
-  </thead>
   <tbody>
 {{/exceptions.0}}
 {{#exceptions}}
     <tr>
-      <td>{{{type.specName.0.value}}}</td>
-      <td>{{{description}}}</td>
+      <td>
+        {{{type.specName.0.value}}}
+        <p>{{{description}}}</p>
+      </td>
     </tr>
 {{/exceptions}}
 {{#exceptions.0}}
@@ -284,12 +272,8 @@
 </table>
 {{/exceptions.0}}
 {{#seealso.0}}
+<h5>{{__global.seealso}}</h5>
 <table class="table table-bordered table-striped table-condensed">
-  <thead>
-    <tr>
-      <th>{{__global.seealso}}</th>
-    </tr>
-  </thead>
   <tbody>
 {{/seealso.0}}
 {{#seealso}}
