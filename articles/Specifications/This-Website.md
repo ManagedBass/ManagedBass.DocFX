@@ -33,7 +33,6 @@ Here is a list of changes made:
 - Customized Footer.
 - Navbar logo replaced with Home button.
 - Customized titles.
-- View Source is available for class members on mobiles.
 - Thinner Show/Hide Table of Contents button on mobiles.
 - Left alignment in collapsable sections.
 - Class members in collapsable sections with expander icon.

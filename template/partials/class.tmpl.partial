@@ -104,12 +104,6 @@
 <h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
 {{/inEnum}}
 {{#children}}
-<h4 id="{{id}}" data-uid="{{uid}}">
-  <a href="#collapsible-{{id}}" data-toggle="collapse" class="expander">
-    {{name.0.value}}
-  </a>
-</h4>
-<div id="collapsible-{{id}}" class="container-fluid collapse in">
 {{^_disableContribution}}
 <div>
   {{#docurl}}
@@ -118,11 +112,17 @@
     <a href="{{docurl}}">{{__global.improveThisDoc}}</a>
   </span>{{/docurl}}
   {{#sourceurl}}
-  <span class="small pull-right">
+  <span class="small pull-right mobile-hide">
     <a href="{{sourceurl}}">{{__global.viewSource}}</a>
   </span>{{/sourceurl}}
 </div>
 {{/_disableContribution}}
+<h4 id="{{id}}" data-uid="{{uid}}">
+  <a href="#collapsible-{{id}}" data-toggle="collapse" class="expander">
+    {{name.0.value}}
+  </a>
+</h4>
+<div id="collapsible-{{id}}" class="container-fluid collapse in">
 <div class="markdown level1 summary">{{{summary}}}</div>
 {{#syntax}}
 {{#inEnum}}
