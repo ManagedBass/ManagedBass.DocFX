@@ -153,6 +153,7 @@
 </table>
 {{/parameters.0}}
 {{#return}}
+{{#description}}
 <h5 class="returns">{{__global.returns}}</h5>
 <table class="table table-bordered table-striped table-condensed">
   <tbody>
@@ -164,6 +165,10 @@
     </tr>
   </tbody>
 </table>
+{{/description}}
+{{^description}}
+<em>{{__global.returns}}</em>: {{{type.specName.0.value}}}
+{{/description}}
 {{/return}}
 {{#typeParameters.0}}
 <h5 class="typeParameters">{{__global.typeParameters}}</h5>
@@ -184,14 +189,59 @@
 {{/typeParameters.0}}
 {{^inEnum}}
 {{#fieldValue}}
+{{#description}}
+<h5 class="fieldValue">{{__global.fieldValue}}</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <tbody>
+    <tr>
+      <td>
+        {{{type.specName.0.value}}}
+        <p style="padding-top:5px">{{{description}}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{{/description}}
+{{^description}}
 <em>Type</em>: {{{type.specName.0.value}}}
+{{/description}}
 {{/fieldValue}}
 {{/inEnum}}
 {{#propertyValue}}
+{{#description}}
+<h5 class="propertyValue">{{__global.propertyValue}}</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <tbody>
+    <tr>
+      <td>
+        {{{type.specName.0.value}}}
+        <p style="padding-top:5px">{{{description}}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{{/description}}
+{{^description}}
 <em>Type</em>: {{{type.specName.0.value}}}
+{{/description}}
 {{/propertyValue}}
 {{#eventType}}
+{{#description}}
+<h5 class="eventType">{{__global.eventType}}</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <tbody>
+    <tr>
+      <td>
+        {{{type.specName.0.value}}}
+        <p style="padding-top:5px">{{{description}}}</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+{{/description}}
+{{^description}}
 <em>{{__global.eventType}}</em>: {{{type.specName.0.value}}}
+{{/description}}
 {{/eventType}}
 {{/syntax}}
 {{#overridden}}
