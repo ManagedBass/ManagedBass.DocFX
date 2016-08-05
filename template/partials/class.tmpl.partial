@@ -49,7 +49,7 @@
       <td>
         <em>{{{id}}}</em>
         <div class="pull-right">{{{type.specName.0.value}}}</div>        
-        <p style="padding-top:5px">{{{description}}}</p>
+        <p class="padTop">{{{description}}}</p>
       </td>
     </tr>
 {{/syntax.parameters}}
@@ -64,7 +64,7 @@
     <tr>
       <td>
         {{{type.specName.0.value}}}
-        <p style="padding-top:5px">{{{description}}}</p>
+        <p class="padTop">{{{description}}}</p>
       </td>
     </tr>
   </tbody>
@@ -144,7 +144,7 @@
       <td>
         <em>{{{id}}}</em>
         <div class="pull-right">{{{type.specName.0.value}}}</div>        
-        <p style="padding-top:5px">{{{description}}}</p>
+        <p class="padTop">{{{description}}}</p>
       </td>
     </tr>
 {{/parameters}}
@@ -160,7 +160,7 @@
     <tr>
       <td>
         {{{type.specName.0.value}}}
-        <p style="padding-top:5px">{{{description}}}</p>
+        <p class="padTop">{{{description}}}</p>
       </td>
     </tr>
   </tbody>
@@ -196,7 +196,7 @@
     <tr>
       <td>
         {{{type.specName.0.value}}}
-        <p style="padding-top:5px">{{{description}}}</p>
+        <p class="padTop">{{{description}}}</p>
       </td>
     </tr>
   </tbody>
@@ -215,7 +215,7 @@
     <tr>
       <td>
         {{{type.specName.0.value}}}
-        <p style="padding-top:5px">{{{description}}}</p>
+        <p class="padTop">{{{description}}}</p>
       </td>
     </tr>
   </tbody>
@@ -233,7 +233,7 @@
     <tr>
       <td>
         {{{type.specName.0.value}}}
-        <p style="padding-top:5px">{{{description}}}</p>
+        <p class="padTop">{{{description}}}</p>
       </td>
     </tr>
   </tbody>

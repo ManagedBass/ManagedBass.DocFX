@@ -17,8 +17,10 @@
   <table>
   {{#children}}
     <tr>
-      <td>{{{specName.0.value}}}</td>
-      <td>{{{summary}}}</td>
+      <td>
+        {{{specName.0.value}}}
+        <p class="padTop">{{{summary}}}</p>
+      </td>
     </tr>
   {{/children}}
   </table>

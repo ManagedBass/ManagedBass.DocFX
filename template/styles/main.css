@@ -65,3 +65,7 @@ a.back-to-top:hover {
 article .collapse {
     padding-left: 0;
 }
+
+.padTop {
+    padding-top: 5px;
+}
