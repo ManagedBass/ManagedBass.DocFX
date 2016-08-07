@@ -1,8 +1,12 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
 {{^_disableContribution}}
-{{#docurl}}<a href="{{docurl}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>{{/docurl}}
-{{#sourceurl}}<a href="{{sourceurl}}" class="fab btn-info pull-right mobile-hide"><i class="glyphicon glyphicon-menu-left"></i><i class="glyphicon glyphicon-menu-right"></i></a>{{/sourceurl}}
+{{#docurl}}
+<a href="{{docurl}}" title="{{__global.improveThisDoc}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>
+{{/docurl}}
+{{#sourceurl}}
+<a href="{{sourceurl}}" title="{{__global.viewSource}}" class="fab btn-info pull-right mobile-hide"><i class="glyphicon glyphicon-menu-left"></i><i class="glyphicon glyphicon-menu-right"></i></a>
+{{/sourceurl}}
 {{/_disableContribution}}
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
 <div class="markdown level0 summary">{{{summary}}}</div>
@@ -109,12 +113,13 @@
   {{#docurl}}
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="{{docurl}}">{{__global.improveThisDoc}}</a>
+    <a href="{{docurl}}" title="{{__global.improveThisDoc}}"><i class="glyphicon glyphicon-pencil"></i></a>
   </span>{{/docurl}}
   {{#sourceurl}}
   <span class="small pull-right mobile-hide">
-    <a href="{{sourceurl}}">{{__global.viewSource}}</a>
-  </span>{{/sourceurl}}
+    <a href="{{sourceurl}}" title="{{__global.viewSource}}"><i class="glyphicon glyphicon-menu-left"></i><i class="glyphicon glyphicon-menu-right"></i></a>
+  </span>
+  {{/sourceurl}}
 </div>
 {{/_disableContribution}}
 <h4 id="{{id}}" data-uid="{{uid}}">

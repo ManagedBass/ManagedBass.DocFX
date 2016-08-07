@@ -2,7 +2,7 @@
 
 {{^_disableContribution}}
 {{#docurl}}
-<a href="{{docurl}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>
+<a href="{{docurl}}" title="{{__global.improveThisDoc}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>
 {{/docurl}}
 {{/_disableContribution}}
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
