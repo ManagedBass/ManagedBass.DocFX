@@ -111,13 +111,13 @@
 {{^_disableContribution}}
 <div>
   {{#docurl}}
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
+  <span class="small pull-right mobile-hide">    
     <a href="{{docurl}}" title="{{__global.improveThisDoc}}"><i class="glyphicon glyphicon-pencil"></i></a>
   </span>{{/docurl}}
   {{#sourceurl}}
   <span class="small pull-right mobile-hide">
     <a href="{{sourceurl}}" title="{{__global.viewSource}}"><i class="glyphicon glyphicon-menu-left"></i><i class="glyphicon glyphicon-menu-right"></i></a>
+    <span class="divider">|</span>
   </span>
   {{/sourceurl}}
 </div>
