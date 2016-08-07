@@ -2,11 +2,8 @@
 
 {{^_disableContribution}}
 {{#docurl}}
-<a href="{{docurl}}" class="btn btn-warning pull-right mobile-hide">{{__global.improveThisDoc}}</a>
+<a href="{{docurl}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>
 {{/docurl}}
-{{#sourceurl}}
-<a href="{{sourceurl}}" class="btn btn-info pull-right mobile-hide">{{__global.viewSource}}</a>
-{{/sourceurl}}
 {{/_disableContribution}}
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
 <div class="markdown level0 summary">{{{summary}}}</div>

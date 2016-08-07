@@ -1,8 +1,8 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
 {{^_disableContribution}}
-{{#docurl}}<a href="{{docurl}}" class="btn btn-warning pull-right mobile-hide">{{__global.improveThisDoc}}</a>{{/docurl}}
-{{#sourceurl}}<a href="{{sourceurl}}" class="btn btn-info pull-right mobile-hide">{{__global.viewSource}}</a>{{/sourceurl}}
+{{#docurl}}<a href="{{docurl}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>{{/docurl}}
+{{#sourceurl}}<a href="{{sourceurl}}" class="fab btn-info pull-right mobile-hide"><i class="glyphicon glyphicon-menu-left"></i><i class="glyphicon glyphicon-menu-right"></i></a>{{/sourceurl}}
 {{/_disableContribution}}
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
 <div class="markdown level0 summary">{{{summary}}}</div>

@@ -71,11 +71,11 @@ h6 mark {
 }
 
 /* additional spacing fixes */
-.btn + .btn {
+.fab + .fab {
   margin-left: 10px;
 }
 
-.btn.pull-right {
+.fab.pull-right {
   margin-left: 10px;
   margin-top: 5px;
 }
