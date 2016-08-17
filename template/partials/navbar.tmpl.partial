@@ -27,8 +27,8 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">&lt;/&gt; on GitHub
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="https://github.com/ManagedBass/ManagedBass">ManagedBass</a></li>
-            <li><a href="https://github.com/ManagedBass/ManagedBass.PInvoke">ManagedBass.PInvoke</a></li>
+            <li><a href="https://github.com/ManagedBass/ManagedBass" target="_blank">ManagedBass</a></li>
+            <li><a href="https://github.com/ManagedBass/ManagedBass.PInvoke" target="_blank">ManagedBass.PInvoke</a></li>
           </ul>
         </li>
       </ul>
