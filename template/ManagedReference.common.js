@@ -30,6 +30,8 @@ exports.transform = function (model)  {
       enumMember.enumValue = declaration.substring(declaration.indexOf("=") + 2);
     }
   }
+
+  model.isStatic = model.type.toLowerCase() != 'namespace' && model.syntax.content[0].value.indexOf("static") != -1;
   
   langs = model.langs;
   handleItem(model, model.newFileRepository);

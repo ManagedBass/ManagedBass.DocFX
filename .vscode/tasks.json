@@ -1,6 +1,6 @@
 {
     "version": "0.1.0",
-    "command": "C:\\Users\\Mathe_000\\Downloads\\docfx\\docfx.exe",
+    "command": "E:\\Downloads\\docfx\\docfx.exe",
     "isShellCommand": true,
     "tasks": [
         {
