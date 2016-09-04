@@ -29,7 +29,7 @@ install:
   - nuget restore C:\projects\ManagedBass\src\ManagedBass.sln
 
   # Download docfx
-  - ps: Invoke-WebRequest https://github.com/dotnet/docfx/releases/download/v2.1/docfx.zip -OutFile C:\docfx.zip
+  - ps: Invoke-WebRequest https://github.com/dotnet/docfx/releases/download/v2.4/docfx.zip -OutFile C:\docfx.zip
 
   # Extract docfx
   - 7z x C:\docfx.zip -oC:\docfx
