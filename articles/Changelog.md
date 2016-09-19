@@ -1,5 +1,14 @@
 # Changelog for ManagedBass.PInvoke
 
+## v0.4.3
+Added support for `BassEnc_Ogg` and `BassEnc_Opus` AddOns.
+
+## v0.4.2
+Made `enum DataFlags` of `int` type.
+
+## v0.4.1
+Added `IEffectParameter` overloads for `Bass.FXGetParameters` and `Bass.FXSetParameters`.
+
 ## v0.4.0
 * Fix typo: `BassFlags.MusicSensitiveRamping`.
 * Added public constructors for `BassException`.

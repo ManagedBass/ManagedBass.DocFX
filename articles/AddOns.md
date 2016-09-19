@@ -37,6 +37,10 @@ The following AddOns support the BASS Plugin system.
 - BassWma
 - BassWv
 
+# BassEnc Plugins
+- BassEnc_Ogg
+- BassEnc_Opus
+
 # Currently not wrapped
 Will only be wrapped if someone contributes
 - Bass Tags
