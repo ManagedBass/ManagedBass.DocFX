@@ -9,7 +9,8 @@
             "ManagedBass/src/Windows/Windows.csproj"
           ]
         }
-      ]
+      ],
+      "dest": "api"
     }
   ],
   "build": {
