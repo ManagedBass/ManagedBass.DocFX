@@ -316,15 +316,6 @@ $(function () {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
     }
-
-    function htmlDecode(value) {
-      return String(value)
-        .replace(/&quot;/g, '"')
-        .replace(/&#39;/g, "'")
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&amp;/g, '&');
-    }
   })();
 
   function formList(item, classes) {
