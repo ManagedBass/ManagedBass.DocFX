@@ -47,7 +47,6 @@ $(function () {
   // Update href in navbar
   (function () {
     var toc = $('#sidetoc');
-    var breadcrumb = new Breadcrumb();
     loadNavbar();
     loadToc();
     function loadNavbar() {
@@ -85,10 +84,6 @@ $(function () {
             }
             if (isActive) {
               $(e).parent().addClass(active);
-              breadcrumb.insert({
-                href: e.href,
-                name: e.innerHTML
-              }, 0);
             } else {
               $(e).parent().removeClass(active)
             }
@@ -121,18 +116,10 @@ $(function () {
             var parent = $(e).parent().parents('li').children('a');
             if (parent.length > 0) {
               parent.addClass(active);
-              breadcrumb.push({
-                href: parent[0].href,
-                name: parent[0].innerHTML
-              });
             }
             // for active li, expand it
             $(e).parents('ul.nav>li').addClass(expanded);
 
-            breadcrumb.push({
-              href: e.href,
-              name: e.innerHTML
-            });
             // Scroll to active item
             var top = 0;
             $(e).parents('li').each(function (i, e) {
@@ -203,27 +190,6 @@ $(function () {
           return false;
         }
       });
-    }
-
-    function Breadcrumb() {
-      var breadcrumb = [];
-      this.push = pushBreadcrumb;
-      this.insert = insertBreadcrumb;
-
-      function pushBreadcrumb(obj) {
-        breadcrumb.push(obj);
-        setupBreadCrumb(breadcrumb);
-      }
-
-      function insertBreadcrumb(obj, index) {
-        breadcrumb.splice(index, 0, obj);
-        setupBreadCrumb(breadcrumb);
-      }
-
-      function setupBreadCrumb() {
-        var html = formList(breadcrumb, 'breadcrumb');
-        $('#breadcrumb').html(html);
-      }
     }
 
     function getAbsolutePath(href) {
