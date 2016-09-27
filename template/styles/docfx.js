@@ -255,7 +255,7 @@ $(function () {
   (function () {
     var hierarchy = getHierarchy();
     if (hierarchy.length > 0) {
-      var html = '<h5 class="title">In This Article</h5>'
+      var html = '';
       html += formList(hierarchy, ['nav', 'bs-docs-sidenav']);
       $("#affix").append(html);
       $('#affix').on('activate.bs.scrollspy', function (e) {
