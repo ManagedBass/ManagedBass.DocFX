@@ -14,7 +14,7 @@ They are appropriate for **Binding** to the UI due to implementation of **INotif
 
 <xref:ManagedBass.Fx.MediaPlayerFX> adds features from <xref:ManagedBass.Fx.BassFx>: **Tempo**, **Pitch** and **Reverse**.
 
-### Using MediaPlayer on UWP
+### Using MediaPlayer on UWP (NOT VERIFIED)
 UWP requires that files be loaded asynchronously.
 
 You should use a type inherited from MediaPlayer.
@@ -26,6 +26,9 @@ namespace ManagedBass
     {
         protected virtual int OnLoad(string FileName)
         {
+            // Request permission to access file.
+            Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.Add(FileName);
+
             int handle;
             Task.Run(() => handle = Bass.CreateStream(FileName)).Wait();
             return handle;
