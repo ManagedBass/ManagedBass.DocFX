@@ -1,37 +1,9 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+<nav id="autocollapse" class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="{{_rel}}" class="navbar-brand"><span style="font-size:1.4em;padding:13.5px 12px 0 0;" class="glyphicon glyphicon-home"></span></a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar">
-      {{^_homepage}}
-      <form class="navbar-form navbar-right" role="search" id="search">
-        <div class="form-group">
-          <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-        </div>
-      </form>
-      {{/_homepage}}
-      <div>
-        <ul class="nav navbar-nav" id="navbarToc"></ul>
-      </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">&lt;/&gt; on GitHub
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://github.com/ManagedBass/ManagedBass" target="_blank">ManagedBass</a></li>
-            <li><a href="https://github.com/ManagedBass/ManagedBass.PInvoke" target="_blank">ManagedBass.PInvoke</a></li>
-          </ul>
-        </li>
-      </ul>
+      <span class="navbar-brand">ManagedBass</span>
     </div>
   </div>
 </nav>

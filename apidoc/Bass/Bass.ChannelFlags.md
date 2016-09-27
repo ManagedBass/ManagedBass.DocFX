@@ -24,4 +24,4 @@ BassFlags                                          | Description
 <xref:ManagedBass.BassFlags.MusicPositionReset>    | Stop all notes when seeking.
 <xref:ManagedBass.BassFlags.MusicPositionResetEx>  | Stop all notes and reset BPM/etc when seeking.
 <xref:ManagedBass.BassFlags.MusicStopBack>         | Stop when a backward jump effect is played.
-SPEAKER                                            | <xref:SpeakerFlags>.
+SPEAKER                                            | Speaker Assignment Flags.

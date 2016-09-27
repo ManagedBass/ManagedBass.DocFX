@@ -37,25 +37,12 @@ a.back-to-top {
     bottom: 20px;
 }
 
-.breadcrumbnav {
-    min-height: 0;
-}
-
 #toc_filter_input {
     width: 100%;
 }
 
 #selector {
     margin-top: 10px;
-}
-
-.navbar-inverse {
-    background: #4C6E8A 
-}
-
-.navbar-inverse .navbar-nav > li > a,
-.navbar-inverse .navbar-text { 
-    color: #D9EDF7; 
 }
 
 .sidetoc,
@@ -72,9 +59,10 @@ article .collapse {
     padding-top: 5px;
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-nav > .active > a:hover { 
-    color: #fff; 
-    background-color: #01579b; 
+.navbar-inverse {
+    background-color: #00897b;
+}
+
+.navbar .navbar-brand {
+    color: white;
 }

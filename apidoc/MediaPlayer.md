@@ -13,3 +13,23 @@ Every **Property**/**Effect**/**DSP** you set on a **MediaPlayer** persists beyo
 They are appropriate for **Binding** to the UI due to implementation of **INotifyPropertyChanged** interface.
 
 <xref:ManagedBass.Fx.MediaPlayerFX> adds features from <xref:ManagedBass.Fx.BassFx>: **Tempo**, **Pitch** and **Reverse**.
+
+### Using MediaPlayer on UWP
+UWP requires that files be loaded asynchronously.
+
+You should use a type inherited from MediaPlayer.
+
+```csharp
+namespace ManagedBass
+{
+    public class MediaPlayerUWP : MediaPlayer
+    {
+        protected virtual int OnLoad(string FileName)
+        {
+            int handle;
+            Task.Run(() => handle = Bass.CreateStream(FileName)).Wait();
+            return handle;
+        }
+    }
+}
+```

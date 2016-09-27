@@ -1,6 +1,5 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 {{!include(/^styles/.*/)}}
-{{!include(search-stopwords.json)}}
 {{#item}}
 <!DOCTYPE html>
 <!--[if IE]><![endif]-->
@@ -12,16 +11,8 @@
         {{^_disableNavbar}}
         {{>partials/navbar}}
         {{/_disableNavbar}}
-        {{^_disableBreadcrumb}}
-        {{>partials/breadcrumb}}
-        {{/_disableBreadcrumb}}
       </header>
-      {{#_enableSearch}}
       <div role="main" class="container-fluid body-content">
-        {{>partials/searchResults}}
-      </div>
-      {{/_enableSearch}}
-      <div role="main" class="container-fluid body-content hide-when-search">
       {{^_disableToc}}
         {{>partials/toc}}
         <div class="article row grid-right">
