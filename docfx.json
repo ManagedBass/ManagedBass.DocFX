@@ -5,7 +5,7 @@
         {
           "cwd": "../",
           "files": [
-            "ManagedBass.PInvoke/src/Windows/Windows.csproj",
+            "ManagedBass.PInvoke/src/Platforms/Windows/Windows.csproj",
             "ManagedBass/src/Windows/Windows.csproj"
           ]
         }
