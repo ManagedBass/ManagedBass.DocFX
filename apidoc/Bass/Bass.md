@@ -22,7 +22,7 @@ namespace HelloWorld
                 var stream = Bass.CreateStream("FILE.mp3");
                 
                 if (stream != 0)
-                    Bass.BASS_ChannelPlay(stream); // Play the stream
+                    Bass.ChannelPlay(stream); // Play the stream
 
                 // Error creating the stream
                 else Console.WriteLine("Error: {0}!", Bass.LastError);
