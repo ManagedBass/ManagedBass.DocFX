@@ -47,51 +47,8 @@ $(function () {
   // Update href in navbar
   (function () {
     var toc = $('#sidetoc');
-    loadNavbar();
     loadToc();
-    function loadNavbar() {
-      var navbarPath = $("meta[property='docfx\\:navrel']").attr("content");
-      var tocPath = $("meta[property='docfx\\:tocrel']").attr("content");
-      if (tocPath) tocPath = tocPath.replace(/\\/g, '/');
-      if (navbarPath) navbarPath = navbarPath.replace(/\\/g, '/');
-      $.get(navbarPath, function (data) {
-        $(data).find("#toc>ul>li").appendTo("#navbarToc");
-        var index = navbarPath.lastIndexOf('/');
-        var navrel = '';
-        if (index > -1) {
-          navrel = navbarPath.substr(0, index + 1);
-        }
-        var currentAbsPath = getAbsolutePath(window.location.pathname);
-        // set active item
-        $('#navbarToc').find('a[href]').each(function (i, e) {
-          var href = $(e).attr("href");
-          if (isRelativePath(href)) {
-            href = navrel + href;
-            $(e).attr("href", href);
-
-            // TODO: currently only support one level navbar
-            var isActive = false;
-            var originalHref = e.name;
-            if (originalHref) {
-              originalHref = navrel + originalHref;
-              if (getDirectory(getAbsolutePath(originalHref)) === getDirectory(getAbsolutePath(tocPath))) {
-                isActive = true;
-              }
-            } else {
-              if (getAbsolutePath(href) === currentAbsPath) {
-                isActive = true;
-              }
-            }
-            if (isActive) {
-              $(e).parent().addClass(active);
-            } else {
-              $(e).parent().removeClass(active)
-            }
-          }
-        });
-      });
-    }
-
+    
     function loadToc() {
       var tocPath = $("meta[property='docfx\\:tocrel']").attr("content");
       if (tocPath) tocPath = tocPath.replace(/\\/g, '/');
