@@ -29,7 +29,7 @@
         "files": ["apidoc/**.md"]
       }
     ],
-    "xref": ["xref/xrefmap.zip"],
+    "xref": ["xrefmap.zip"],
     "dest": "_site",
     "template": ["template"],
     "noLangKeyword": false

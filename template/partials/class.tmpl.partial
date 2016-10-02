@@ -1,12 +1,14 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
 {{^_disableContribution}}
+<div class="contributionPanel">
 {{#docurl}}
 <a href="{{docurl}}" title="{{__global.improveThisDoc}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>
 {{/docurl}}
 {{#sourceurl}}
 <a href="{{sourceurl}}" title="{{__global.viewSource}}" class="fab btn-info pull-right mobile-hide"><i class="glyphicon glyphicon-chevron-left"></i><i class="glyphicon glyphicon-chevron-right"></i></a>
 {{/sourceurl}}
+</div>
 {{/_disableContribution}}
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
 <div class="markdown level0 summary">{{{summary}}}</div>

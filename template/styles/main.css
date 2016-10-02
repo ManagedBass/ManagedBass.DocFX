@@ -27,6 +27,13 @@
     transform: scale(1.1);
 }
 
+.contributionPanel {
+    z-index: 9999;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+}
+
 a.back-to-top {
     background-color:#F44336;
     background:#F44336;
