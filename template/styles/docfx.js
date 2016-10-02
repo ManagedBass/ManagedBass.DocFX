@@ -44,7 +44,7 @@ $(function () {
     });
   })();
 
-  // Update href in navbar
+  // Update href in toc
   (function () {
     var toc = $('#sidetoc');
     loadToc();
@@ -162,15 +162,6 @@ $(function () {
 
     function isAbsolutePath(href) {
       return (/^(?:[a-z]+:)?\/\//i).test(href);
-    }
-
-    function getDirectory(href) {
-      if (!href) return '';
-      var index = href.lastIndexOf('/');
-      if (index == -1) return '';
-      if (index > -1) {
-        return href.substr(0, index);
-      }
     }
   })();
 
