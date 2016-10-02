@@ -1,15 +1,14 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-{{^_disableContribution}}
 <div class="contributionPanel">
-{{#docurl}}
-<a href="{{docurl}}" title="{{__global.improveThisDoc}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>
-{{/docurl}}
-{{#sourceurl}}
-<a href="{{sourceurl}}" title="{{__global.viewSource}}" class="fab btn-info pull-right mobile-hide"><i class="glyphicon glyphicon-chevron-left"></i><i class="glyphicon glyphicon-chevron-right"></i></a>
-{{/sourceurl}}
+  {{#docurl}}
+  <a href="{{docurl}}" title="{{__global.improveThisDoc}}" class="fab btn-warning pull-right mobile-hide"><i class="glyphicon glyphicon-pencil"></i></a>
+  {{/docurl}}
+  {{#sourceurl}}
+  <a href="{{sourceurl}}" title="{{__global.viewSource}}" class="fab btn-info pull-right mobile-hide"><i class="glyphicon glyphicon-chevron-left"></i><i class="glyphicon glyphicon-chevron-right"></i></a>
+  {{/sourceurl}}
 </div>
-{{/_disableContribution}}
+
 <h1 id="{{id}}" data-uid="{{uid}}">{{>partials/title}}</h1>
 <div class="markdown level0 summary">{{{summary}}}</div>
 
@@ -111,10 +110,31 @@
 {{/example}}
 {{#children}}
 {{^inEnum}}
-<h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
+<h3 id="{{id}}">
+  {{#inConstructor}}
+  {{__global.constructorsInSubtitle}}
+  {{/inConstructor}}
+  {{#inField}}
+  {{__global.fieldsInSubtitle}}
+  {{/inField}}
+  {{#inProperty}}
+  {{__global.propertiesInSubtitle}}
+  {{/inProperty}}
+  {{#inMethod}}
+  {{__global.methodsInSubtitle}}
+  {{/inMethod}}
+  {{#inEvent}}
+  {{__global.eventsInSubtitle}}
+  {{/inEvent}}
+  {{#inOperator}}
+  {{__global.operatorsInSubtitle}}
+  {{/inOperator}}
+  {{#inEii}}
+  {{__global.eiisInSubtitle}}
+  {{/inEii}}
+</h3>
 {{/inEnum}}
 {{#children}}
-{{^_disableContribution}}
 <div>
   {{#docurl}}
   <span class="small pull-right mobile-hide">    
@@ -134,7 +154,7 @@
   </span>
   {{/sourceurl}}
 </div>
-{{/_disableContribution}}
+
 <h4 id="{{id}}" data-uid="{{uid}}">
   <a href="#collapsible-{{id}}" data-toggle="collapse" class="expander">
     {{name.0.value}}
