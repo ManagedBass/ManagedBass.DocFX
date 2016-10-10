@@ -46,7 +46,7 @@ Format String, can contain the following things:
   `%,`   | `,`
   `%)`   | `)`
        
-## Example
+**Example**  
 Assume we have the following information in the tag:
 
 Tag    | Value
@@ -57,19 +57,19 @@ Album  | Once
 Track  | 3
 Year   | 2004
 
-Format string: `%IFV1(%TRCK,%TRCK. )%IFV2(%ARTI,%ICAP(%ARTI),no artist) - %IFV2(%TITL,%ICAP(%TITL) -,no title -) %IFV1(%ALBM,%IUPC(%ALBM))%IFV1(%YEAR, %(%YEAR%))`  
-Output: `3.- Nightwish - Nemo - ONCE (2004)`
+*Format string*: `%IFV1(%TRCK,%TRCK. )%IFV2(%ARTI,%ICAP(%ARTI),no artist) - %IFV2(%TITL,%ICAP(%TITL) -,no title -) %IFV1(%ALBM,%IUPC(%ALBM))%IFV1(%YEAR, %(%YEAR%))`  
+*Output*: `3.- Nightwish - Nemo - ONCE (2004)`.
 
-if 'Artist' and 'Title' are empty, the output will be:  
+If 'Artist' and 'Title' are empty, the output will be:  
 `3. - no artist - no title - ONCE (2004)`
 
-if only 'Track' is empty, the output will be:  
+If only 'Track' is empty, the output will be:  
 `Nightwish - Nemo - ONCE (2004)`
 
-## Caution
+**Caution**  
 `%IFV2(sometext ,a,b)` always evaluates to a, because a space after `sometext` causes the condition string to be not empty.
 This is intentional.
 
-## Another caution
-symbols `%(,)` are reserved, that is, they must be escaped if they are inteded to appear in the output.  
+**Another caution**  
+Symbols `%(,)` are reserved, that is, they must be escaped if they are inteded to appear in the output.  
 See the above example: the parens around `%YEAR` are escaped with `%` to prevent misinterpretation.
