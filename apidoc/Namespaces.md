@@ -1,7 +1,7 @@
 ---
 uid: ManagedBass
 ---
-This namespace hosts the core BASS Library and simple Plugins.
+Welcome to the API Documentation website for Windows version of ManagedBass.PInvoke and ManagedBass.
 
 ---
 uid: ManagedBass.Enc
