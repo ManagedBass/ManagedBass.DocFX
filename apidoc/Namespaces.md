@@ -6,7 +6,7 @@ Welcome to the **API Documentation website** for Windows version of [ManagedBass
 ManagedBass is a Free Open-Source Cross-Platform .Net wrapper for un4seen [BASS](http://un4seen.com) audio library.  
 (c) 2016 [Mathew Sachin](https://github.com/MathewSachin) - [MIT License](https://raw.githubusercontent.com/ManagedBass/Resources/master/LICENSE.md).
 
-For more info, visit: https://github.com/ManagedBass/Resources.
+For more info, visit the [Home repository](https://github.com/ManagedBass/Home).
 
 ---
 uid: ManagedBass.Enc
