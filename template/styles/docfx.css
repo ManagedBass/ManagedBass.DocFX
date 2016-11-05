@@ -191,7 +191,7 @@ article section {
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #f1f1f1;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   border-right: 1px solid #e7e7e7;
   z-index: 1;
 }
@@ -326,7 +326,7 @@ body .toc{
 
 .article {
   margin-top: 80px;
-  margin-bottom: 115px;
+  margin-bottom: 10px;
 }
 
 #_content>a{
