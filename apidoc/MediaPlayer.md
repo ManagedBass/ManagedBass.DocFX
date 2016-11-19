@@ -24,14 +24,13 @@ namespace ManagedBass
 {
     public class MediaPlayerUWP : MediaPlayer
     {
-        protected virtual int OnLoad(string FileName)
+        public async void LoadAsync(string FileName)
         {
             // Request permission to access file.
             Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.Add(FileName);
 
-            int handle;
-            Task.Run(() => handle = Bass.CreateStream(FileName)).Wait();
-            return handle;
+            // Load file asynchronously.
+            await Task.Run(() => Load(FileName));
         }
     }
 }
