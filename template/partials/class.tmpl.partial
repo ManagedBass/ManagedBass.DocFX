@@ -343,18 +343,22 @@
 {{/children}}
 {{/children}}
 
-<!--
 {{#extensionMethods.0}}
-<h3 id="extensionmethods">{{__global.extensionMethods}}</h3>
+<h5 id="extensionmethods">{{__global.extensionMethods}}</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <tbody>
 {{/extensionMethods.0}}
 {{#extensionMethods}}
-<div>
-  {{#definition}}
-    <xref href="{{definition}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
-  {{/definition}}
-  {{^definition}}
-    <xref href="{{uid}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
-  {{/definition}}
-</div>
+  <tr><td>
+    {{#definition}}
+      <xref href="{{definition}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
+    {{/definition}}
+    {{^definition}}
+      <xref href="{{uid}}" fullName="{{fullName.0.value}}" name="{{nameWithType.0.value}}"/>
+    {{/definition}}
+  </td></tr>
 {{/extensionMethods}}
--->
+{{#extensionMethods.0}}
+  </tbody>
+</table>
+{{/extensionMethods.0}}
