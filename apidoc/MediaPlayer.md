@@ -28,7 +28,8 @@ namespace ManagedBass
     {
         public async void LoadAsync(string FileName)
         {
-            var fileToPlay = await StorageFile.GetFileFromPathAsync(FileName);
+            //Get the file we want to play.
+            StorageFile fileToPlay = await StorageFile.GetFileFromPathAsync(FileName);
             
             // Request permission to access file.
             AccessCache.StorageApplicationPermissions.FutureAccessList.Add(fileToPlay);
