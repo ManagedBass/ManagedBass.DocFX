@@ -20,14 +20,19 @@ UWP requires that files be loaded asynchronously.
 You should use a type inherited from MediaPlayer.
 
 ```csharp
+using Windows.Storage;
+
 namespace ManagedBass
 {
     public class MediaPlayerUWP : MediaPlayer
     {
         public async void LoadAsync(string FileName)
         {
+            //Get the file we want to play.
+            StorageFile fileToPlay = await StorageFile.GetFileFromPathAsync(FileName);
+            
             // Request permission to access file.
-            Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList.Add(FileName);
+            AccessCache.StorageApplicationPermissions.FutureAccessList.Add(fileToPlay);
 
             // Load file asynchronously.
             await Task.Run(() => Load(FileName));
