@@ -42,7 +42,7 @@
 {{/isStatic}}
 
 <h6><strong>{{__global.namespace}}</strong>: {{namespace}}</h6>
-<h6><strong>Package</strong>: <a href="http://nuget.org/packages/{{assemblies.0}}">{{assemblies.0}}</a></h6>
+<!--<h6><strong>Package</strong>: <a href="http://nuget.org/packages/{{assemblies.0}}">{{assemblies.0}}</a></h6>-->
 {{^inEnum}}
 <h5 id="{{id}}_syntax">{{__global.syntax}}</h5>
 <div class="codewrapper">

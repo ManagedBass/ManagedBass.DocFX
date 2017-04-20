@@ -1,63 +1,39 @@
 version: 1.0.{build}
 
-branches:
-  only:
-    - master
-
 environment:
   access_token:
     secure: c1r9fMnxBX4DW0SvZ4V/5Nucdi8pzA2YiQ/wsiyfjIY19q4RyKCYZTtU+2YQbiLT
 
-# Setup git credentials
-init:
+install:
+  # Restore Submodules
+  - git submodule init
+  - git submodule update
+
+
+  # Install docfx using Chocolatey
+  - cinst docfx -y
+
+build_script:
+  # Generate documentation
+  - docfx
+
+deploy_script:
+  # Clone target repository
+  - git clone -q https://github.com/ManagedBass/ManagedBass.GitHub.io.git _target
+
+  # Move repository to output folder
+  - ps: Move-Item _target\.git _site -Recurse
+
+  # Setup git credentials
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git config --global user.email "mathew.sachin.git@outlook.com"
   - git config --global user.name "Mathew Sachin"
 
-install:
-  # Checkout master branch
-  - git checkout master
-  
-  # Clone ManagedBass.PInvoke for Source Code
-  - git clone -q https://github.com/ManagedBass/ManagedBass.PInvoke.git C:\projects\ManagedBass.PInvoke
-
-  # Clone ManagedBass for Source Code
-  - git clone -q https://github.com/ManagedBass/ManagedBass.git C:\projects\ManagedBass
-
-  # Restore packages for ManagedBass
-  - nuget restore C:\projects\ManagedBass\src\ManagedBass.sln
-
-  # Download docfx
-  - ps: Invoke-WebRequest https://github.com/dotnet/docfx/releases/download/v2.4/docfx.zip -OutFile C:\docfx.zip
-
-  # Extract docfx
-  - 7z x C:\docfx.zip -oC:\docfx
-
-build_script:
-  # Generate documentation
-  - C:\docfx\docfx.exe
-
-after_build:
-  # Clone target repository
-  - git clone -q https://github.com/ManagedBass/ManagedBass.GitHub.io.git C:\projects\ManagedBass.GitHub.io
-
-before_deploy:
-# Clean target repository
-- ps: >-
-    Get-ChildItem -Path C:\projects\ManagedBass.GitHub.io -Exclude ".git" | foreach ($_) 
-    {
-       Remove-Item $_.fullname -Force -Recurse
-    }   
-
-deploy_script:
-  # Copy website content  
-  - ps: Move-Item -Path .\_site\* -Destination C:\projects\ManagedBass.GitHub.io
-
   # Commit
-  - cd C:\projects\ManagedBass.GitHub.io
+  - cd _site
   - git add -A
-  - git commit -m "update"
+  - git commit -m "CI Update"
 
   # Push back changes
   - git push

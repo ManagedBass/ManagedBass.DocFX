@@ -3,10 +3,13 @@
     {
       "src": [
         {
-          "cwd": "../",
           "files": [
-            "ManagedBass.PInvoke/src/Platforms/Windows/Windows.csproj",
-            "ManagedBass/src/Windows/Windows.csproj"
+            "src/**.cs"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/iOS.csproj",
+            "**/Desktop.csproj"
           ]
         }
       ],
