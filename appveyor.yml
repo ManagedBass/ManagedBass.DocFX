@@ -17,6 +17,9 @@ build_script:
   # Generate documentation
   - docfx
 
+test_script:
+  - ps: if (Get-ChildItem api | Measure-Object -eq 0) { throw "No Metadata generated" }
+
 deploy_script:
   # Clone target repository
   - git clone -q https://github.com/ManagedBass/ManagedBass.GitHub.io.git _target
