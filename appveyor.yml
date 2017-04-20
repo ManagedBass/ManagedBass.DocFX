@@ -22,7 +22,7 @@ deploy_script:
   - git clone -q https://github.com/ManagedBass/ManagedBass.GitHub.io.git _target
 
   # Move repository to output folder
-  - ps: Move-Item _target\.git _site -Recurse
+  - ps: Move-Item _target\.git _site
 
   # Setup git credentials
   - git config --global credential.helper store
