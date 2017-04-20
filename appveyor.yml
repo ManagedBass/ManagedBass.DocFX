@@ -22,7 +22,7 @@ test_script:
 
 deploy_script:
   # Clone target repository
-  - git clone -q https://github.com/ManagedBass/ManagedBass.GitHub.io.git _target
+  - git clone https://github.com/ManagedBass/ManagedBass.GitHub.io.git _target
 
   # Move repository to output folder
   - ps: Move-Item _target\.git _site
