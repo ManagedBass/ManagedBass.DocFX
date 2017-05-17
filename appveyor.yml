@@ -8,6 +8,9 @@ install:
   # Clone Submodules
   - git submodule update --init
 
+  # Install Microsoft Build Tools 2015 (required for DocFx)
+  - cinst microsoft-build-tools --version 14.0.23107.10 -y
+
   # Install docfx using Chocolatey
   - cinst docfx -y
 
@@ -17,7 +20,7 @@ build_script:
 
 test_script:
   - ps: >-
-      if ((Get-ChildItem api -Filter *.yml | Measure-Object) -eq 0)
+      if (-not (Test-Path api) -or ((Get-ChildItem api -Filter *.yml | Measure-Object) -eq 0))
       {
           throw "No Metadata generated";
       }
