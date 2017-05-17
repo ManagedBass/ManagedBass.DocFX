@@ -4,12 +4,12 @@
       "src": [
         {
           "files": [
-            "src/**.cs"
+            "src/**.sln"
           ],
           "exclude": [
             "**/obj/**",
-            "**/iOS.csproj",
-            "**/Desktop.csproj"
+            "**/iOS/**",
+            "**/Desktop/**"
           ]
         }
       ],
@@ -34,7 +34,7 @@
     ],
     "xref": ["xrefmap.zip"],
     "dest": "_site",
-    "template": ["template"],
+    "template": ["default", "docfx-tmpl/src"],
     "noLangKeyword": false
   }
 }

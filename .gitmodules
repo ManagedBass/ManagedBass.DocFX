@@ -1,3 +1,6 @@
 [submodule "src"]
 	path = src
 	url = https://github.com/ManagedBass/ManagedBass.git
+[submodule "docfx-tmpl"]
+	path = docfx-tmpl
+	url = https://github.com/MathewSachin/docfx-tmpl.git
