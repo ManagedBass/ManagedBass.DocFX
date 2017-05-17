@@ -9,7 +9,7 @@ install:
   - git submodule update --init
 
   # Install Microsoft Build Tools 2015 (required for DocFx)
-  - cinst microsoft-build-tools --version 14.0.23107.10 -y
+  - cinst microsoft-build-tools --version 14.0.25420.1 -y
 
   # Install docfx using Chocolatey
   - cinst docfx -y
