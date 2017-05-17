@@ -1,5 +1,7 @@
 version: 1.0.{build}
 
+image: Visual Studio 2015
+
 environment:
   access_token:
     secure: c1r9fMnxBX4DW0SvZ4V/5Nucdi8pzA2YiQ/wsiyfjIY19q4RyKCYZTtU+2YQbiLT
@@ -7,9 +9,6 @@ environment:
 install:
   # Clone Submodules
   - git submodule update --init
-
-  # Install Microsoft Build Tools 2015 (required for DocFx)
-  - cinst microsoft-build-tools --version 14.0.25420.1 -y
 
   # Install docfx using Chocolatey
   - cinst docfx -y
