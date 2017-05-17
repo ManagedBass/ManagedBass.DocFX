@@ -5,10 +5,8 @@ environment:
     secure: c1r9fMnxBX4DW0SvZ4V/5Nucdi8pzA2YiQ/wsiyfjIY19q4RyKCYZTtU+2YQbiLT
 
 install:
-  # Restore Submodules
-  - git submodule init
-  - git submodule update
-
+  # Clone Submodules
+  - git submodule update --init
 
   # Install docfx using Chocolatey
   - cinst docfx -y
@@ -18,7 +16,11 @@ build_script:
   - docfx
 
 test_script:
-  - ps: if ((Get-ChildItem api | Measure-Object) -eq 0) { throw "No Metadata generated" }
+  - ps: >-
+      if ((Get-ChildItem api -Filter *.yml | Measure-Object) -eq 0)
+      {
+          throw "No Metadata generated";
+      }
 
 deploy_script:
   # Clone target repository
@@ -27,16 +29,16 @@ deploy_script:
   # Move repository to output folder
   - ps: Move-Item _target\.git _site
 
+  # Commit
+  - cd _site
+  - git add -A
+  - git commit -m "CI Update"
+
   # Setup git credentials
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git config --global user.email "mathew.sachin.git@outlook.com"
   - git config --global user.name "Mathew Sachin"
-
-  # Commit
-  - cd _site
-  - git add -A
-  - git commit -m "CI Update"
 
   # Push back changes
   - git push
