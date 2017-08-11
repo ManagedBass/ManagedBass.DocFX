@@ -31,16 +31,16 @@ deploy_script:
   # Move repository to output folder
   - ps: Move-Item _target\.git _site
 
-  # Commit
-  - cd _site
-  - git add -A
-  - git commit -m "CI Update"
-
   # Setup git credentials
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git config --global user.email "mathew.sachin.git@outlook.com"
   - git config --global user.name "Mathew Sachin"
+
+  # Commit
+  - cd _site
+  - git add -A
+  - git commit -m "CI Update"
 
   # Push back changes
   - git push
